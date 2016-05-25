@@ -12,14 +12,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <%= render partial: 'layouts/header' %>
-          <%= yield %>
-          <%= render partial: 'layouts/footer' %>
-        </div>
-      </div>
-    </div>
+    <%= render partial: 'layouts/header' %>
+    <%= yield %>
+    <%= render partial: 'layouts/footer' %>
   </body>
 </html>
