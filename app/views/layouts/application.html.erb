@@ -15,19 +15,9 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">ralin.net</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+          <%= render partial: 'layouts/header' %>
           <%= yield %>
+          <%= render partial: 'layouts/footer' %>
         </div>
       </div>
     </div>
