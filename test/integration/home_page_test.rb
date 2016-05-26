@@ -9,6 +9,7 @@ class HomePageTest < ActionDispatch::IntegrationTest
     assert_select 'nav a[href=?]', root_path, count: 2
     assert_select 'nav a[href=?]', about_path
     assert_select '.jumbotron a[href=?]', about_path
+    assert_select '.marketing h2', count: 3
     assert_select 'footer'
   end
 end
