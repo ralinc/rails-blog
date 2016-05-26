@@ -2,5 +2,7 @@ en:
   homes:
     show:
       title: Ralin Chimev personal website
+    jumbotron:
       header: Hello,
       welcome_text: I'm Ralin, software developer and open source enthusiast.
+      button_text: Learn more
