@@ -14,10 +14,14 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active">
-          <%= link_to "Home", root_path %>
+          <%= link_to t('nav.home'), root_path %>
         </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
+        <li>
+          <%= link_to t('nav.about'), root_path %>
+        </li>
+        <li>
+          <%= link_to t('nav.blog'), root_path %>
+        </li>
       </ul>
     </div>
   </div>
