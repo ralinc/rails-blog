@@ -4,5 +4,5 @@ en:
     about: "About"
     blog: "Blog"
   footer:
-    text: "This website is built with open source software like Ruby on Rails, jQuery, Bootstrap, PostgreSQL and Vim. It runs on Apache on Linux. Its source code is open and can be found under my Github profile: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
+    text: "This website is built with open source software like Ruby on Rails, React.js, jQuery, Sass, Bootstrap, PostgreSQL using the free Vim editor. It runs on Apache on Linux. Its source code is open and can be found under my Github profile: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
 
