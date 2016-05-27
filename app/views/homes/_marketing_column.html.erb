@@ -1,5 +1,5 @@
 <div class="col-sm-4 text-center">
-  <span class="glyphicon glyphicon-<%= column[:icon] %>" aria-hidden="true"></span>
+  <%= icon(column[:icon]) %>
   <h2><%= column[:header] %></h2>
   <p><%= column[:text] %></p>
   <p><%= link_to column[:link_text].html_safe, column[:link], class: 'btn btn-default' %></p>
