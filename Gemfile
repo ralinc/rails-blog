@@ -11,6 +11,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
+gem 'haml'
 
 group :development, :test do
   gem 'sqlite3'
@@ -25,4 +26,3 @@ end
 group :production do
   gem 'pg'
 end
-

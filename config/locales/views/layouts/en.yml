@@ -4,5 +4,5 @@ en:
     about: "About"
     blog: "Blog"
   footer:
-    text: "My e-home is built with open source software and tools like Ruby on Rails, jQuery, Sass, Bootstrap, PostgreSQL and Vim. It runs on Passenger inside Apache on Linux. Its source code is open and can be found under my Github profile: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
+    text: "My e-home is built with open source software and tools like Ruby on Rails, Haml, Sass, CoffeeScript, jQuery, Bootstrap, PostgreSQL and Vim. It runs on Passenger inside Apache on Linux. Its source code is open and can be found under my Github profile: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
 
