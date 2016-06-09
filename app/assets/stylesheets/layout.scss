@@ -7,19 +7,24 @@ body {
   margin: 80px 0 100px 0;
 }
 
-.navbar {
-  img {
+nav {
+  a img {
     width: 40px;
     margin-top: 5px;
     margin-left: 10px;
   }
 }
 
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #f5f5f5;
+
+  p {
+    margin: 15px;
+    font-size: 95%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -27,11 +32,3 @@ body {
     margin-bottom: 150px;
   }
 }
-
-.container {
-  .text-muted {
-    margin: 15px;
-    font-size: 95%;
-  }
-}
-
