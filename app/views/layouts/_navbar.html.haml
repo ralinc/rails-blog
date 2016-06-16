@@ -15,3 +15,9 @@
           = link_to t('nav.about'), about_path
         %li
           = link_to t('nav.blog'), '#'
+        - if authenticated?
+          %li
+            = link_to t('nav.logout'), logout_path, method: :delete
+        - else
+          %li
+            = link_to t('nav.login'), login_path
