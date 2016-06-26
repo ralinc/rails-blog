@@ -1,1 +1,34 @@
+.stage {
+  .wrap {
+    width: 50%;
 
+    @media (max-width: $small_width) {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: .2rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      font-weight: 100;
+      color: $dark_text_color;
+      letter-spacing: .1rem;
+    }
+
+    a {
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      outline: 0;
+      padding: .75rem 2.5rem;
+      margin-top: 2rem;
+      color: white;
+      background-color: #222;
+      border-radius: 6px;
+    }
+  }
+}

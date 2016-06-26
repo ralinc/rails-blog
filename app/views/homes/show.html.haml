@@ -1,3 +1,5 @@
 - provide :title, t('.title')
-%h1= t('.header')
-%p= t('.welcome_text')
+.wrap
+  %h1= t('.header')
+  %p= t('.welcome_text')
+  %p= link_to t('.button'), about_path
