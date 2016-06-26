@@ -4,10 +4,43 @@
 
 body {
   font-weight: 300;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;
-  color: #000000;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
 }

@@ -6,5 +6,5 @@ en:
     login: "Login"
     logout: "Logout"
   footer:
-    text: "My e-home is built with open source software and tools like Ruby on Rails, Sass, CoffeeScript, jQuery, Bootstrap, PostgreSQL, Vim. It runs on Passenger/Apache/Linux. The source code is open at: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
+    text: "My e-home is built with open source software and tools like Ruby on Rails, Sass, CoffeeScript, jQuery, Bootstrap, PostgreSQL, Vim. It runs on Passenger inside Apache under Linux. Its source code is open at: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
 
