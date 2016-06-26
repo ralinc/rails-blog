@@ -1,12 +1,7 @@
 - provide :title, 'Login'
+%h1= 'Login'
 
-.page-header
-  %h1= 'Login'
-
-.row
-  = form_for(:session, url: login_path, html: { class: 'form-signin' }) do |f|
-    .form-group
-      = f.email_field :email, class: 'form-control', placeholder: 'Email'
-    .form-group
-      = f.password_field :password, class: 'form-control', placeholder: 'Password'
-    = f.submit 'Log in', class: 'btn btn-lg btn-primary btn-block'
+= form_for(:session, url: login_path) do |f|
+  = f.email_field :email, placeholder: 'Email'
+  = f.password_field :password, placeholder: 'Password'
+  = f.submit 'Log in'

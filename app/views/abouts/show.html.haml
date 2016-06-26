@@ -1,11 +1,8 @@
 - provide :title, t('.title')
-
-.page-header
-  %h1= t('.title')
-
+%h1= t('.title')
 %p= t('.overview')
 
-.row.text-center.social-links
+.social-links
   = link_to icon('github-square'), 'https://github.com/ralinc', target: '_blank'
   = link_to icon('linkedin-square'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
   = link_to icon('facebook-official'), 'https://facebook.com/ralin.chimev', target: '_blank'
