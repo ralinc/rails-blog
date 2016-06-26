@@ -1,5 +1,17 @@
 en:
   abouts:
     show:
-      title: About me
-      overview: I am a software developer interested mostly in web development. I am passionate about building clean and simple software with smart design that makes people happy. 
+      title: About
+      overview: I am a software developer mostly interested in web development.
+      featured: [{
+              icon: "code",
+              header: "Apps",
+              text: "I love developing clean and simple web and mobile applications. I create smart designs that improves the user experience and are easy to work with. My goal is to build robust web solutions that simply work.",
+              link: "https://github.com/ralinc"
+            }, {
+              icon: "pencil",
+              header: "Blog",
+              text: "My blog is mostly technical and reflects on my daily work. You can find posts on using open source frameworks and tools, creating web applications, good practices, clean code, refactoring, TDD, BDD.",
+              link: ""
+            }] 
+      social: Social

@@ -27,13 +27,13 @@ nav {
     }
 
     a {
-      color: #777;
+      color: $primary_text_color;
       padding: 0.875rem;
       text-decoration: none;
       display: block;
 
       &:hover {
-        color: #333;
+        color: $dark_text_color;
       }
 
       &:hover, &:link, &:active, &:visited {

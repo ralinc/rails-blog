@@ -4,22 +4,3 @@ en:
       title: Ralin Chimev personal website
       header: Hello,
       welcome_text: I'm Ralin, software developer and open source enthusiast.
-      columns: [{
-        icon: "code",
-        header: "Code",
-        text: "My interests lie most heavily in web development. I am passionate about writing clean code and using open source technologies like Ruby, Rails, jQuery, React.js, Angular.js, Sass, Bootstrap, PostgreSQL, MySQL, Apache, Linux.",
-        link: "https://github.com/ralinc",
-        link_text: "View more &raquo;"
-      }, {
-        icon: "diamond",
-        header: "Apps",
-        text: "I love developing clean and simple web and mobile applications. My goal is to create a smart design that improves the user experience and is easy to work with. I like building robust software that simply works and makes people happy.",
-        link: "#",
-        link_text: "View more &raquo;"
-      }, {
-        icon: "pencil-square-o",
-        header: "Blog",
-        text: "My blog is mostly technical and reflects on my daily work. You can find posts on using open source frameworks and tools, building web applications, following best practices, writing clean code, refactoring, TDD, BDD.",
-        link: "#",
-        link_text: "View more &raquo;"
-      }] 
