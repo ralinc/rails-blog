@@ -1,3 +1,9 @@
+$super_small_width: 320px;
+$extra_small_width: 480px;
+$small_width: 768px;
+$medium_width: 992px;
+$large_width: 1200px;
+
 * {
   box-sizing: border-box;
 }
@@ -16,19 +22,19 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $small_width) {
   .container {
     width: 700px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $medium_width) {
   .container {
     width: 900px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $large_width) {
   .container {
     width: 1000px;
   }

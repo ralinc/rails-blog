@@ -6,15 +6,22 @@ nav {
 
   .container {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: $extra_small_width) {
+      justify-content: space-around;
+    }
+
+    @media (max-width: $super_small_width) {
+      flex-direction: column;
+    }
 
     .brand {
       flex: 1;
       padding: 0.875rem;
 
-      @media (max-width: 400px) {
+      @media (max-width: $extra_small_width) {
         display: none;
       }
     }
@@ -34,7 +41,7 @@ nav {
         outline: 0;
       }
 
-      @media (max-width: 400px) {
+      @media (max-width: $extra_small_width) {
         padding-left: 0.4rem;
         padding-right: 0.4rem;
       }
