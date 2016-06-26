@@ -1,34 +1,13 @@
-html {
-  position: relative;
-  min-height: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  margin: 80px 0 100px 0;
-}
-
-nav {
-  a img {
-    width: 40px;
-    margin-top: 5px;
-    margin-left: 10px;
-  }
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #f5f5f5;
-
-  p {
-    margin: 15px;
-    font-size: 95%;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    margin-bottom: 150px;
-  }
+  font-weight: 300;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
 }

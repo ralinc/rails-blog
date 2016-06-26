@@ -1,23 +1,15 @@
-%nav.navbar.navbar-default.navbar-fixed-top
+%nav
   .container
-    .navbar-header
-      %button.navbar-toggle.collapsed{ type: "button", "data-toggle" => "collapse", "data-target" => "#navbar-collapse", "aria-expanded" => false }
-        %span.sr-only= "Toggle navigation"
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to gravatar, root_path
-    .collapse#navbar-collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li{ class: "<%= 'active' if current_page? root_path %>" }
-          = link_to t('nav.home'), root_path
-        %li{ class: "<%= 'active' if current_page? about_path %>" }
-          = link_to t('nav.about'), about_path
+    %ul
+      %li{ class: "<%= 'active' if current_page? root_path %>" }
+        = link_to t('nav.home'), root_path
+      %li{ class: "<%= 'active' if current_page? about_path %>" }
+        = link_to t('nav.about'), about_path
+      %li
+        = link_to t('nav.blog'), '#'
+      - if authenticated?
         %li
-          = link_to t('nav.blog'), '#'
-        - if authenticated?
-          %li
-            = link_to t('nav.logout'), logout_path, method: :delete
-        - else
-          %li
-            = link_to t('nav.login'), login_path
+          = link_to t('nav.logout'), logout_path, method: :delete
+      - else
+        %li
+          = link_to t('nav.login'), login_path
