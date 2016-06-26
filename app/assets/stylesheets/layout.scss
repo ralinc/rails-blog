@@ -20,6 +20,8 @@ body {
 
 .container {
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: $small_width) {
