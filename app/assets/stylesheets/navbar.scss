@@ -10,6 +10,15 @@ nav {
     justify-content: flex-end;
     align-items: center;
 
+    .brand {
+      flex: 1;
+      padding: 0.875rem;
+
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }
+
     a {
       color: #777;
       padding: 0.875rem;
@@ -25,7 +34,7 @@ nav {
         outline: 0;
       }
 
-      @media (max-width: 350px) {
+      @media (max-width: 400px) {
         padding-left: 0.4rem;
         padding-right: 0.4rem;
       }

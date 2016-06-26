@@ -1,4 +1,5 @@
 en:
+  brand: "Ralin"
   nav:
     home: "Home"
     about: "About"
@@ -7,4 +8,3 @@ en:
     logout: "Logout"
   footer:
     text: "My e-home is built with open source software and tools like Ruby on Rails, Sass, CoffeeScript, jQuery, Bootstrap, PostgreSQL, Vim. It runs on Passenger inside Apache under Linux. Its source code is open at: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"
-
