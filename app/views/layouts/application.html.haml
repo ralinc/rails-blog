@@ -12,6 +12,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = render partial: 'layouts/navbar'
-    = yield
+
+    - haml_tag_if current_page?(root_path), '.stage' do
+      = render partial: 'layouts/navbar'
+      .container
+        = yield
+
     = render partial: 'layouts/footer'

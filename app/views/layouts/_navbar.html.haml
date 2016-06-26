@@ -4,8 +4,4 @@
       .p= t('brand') 
     = link_to t('nav.home'), root_path
     = link_to t('nav.about'), about_path
-    = link_to t('nav.blog'), '#'
-    - if authenticated?
-      = link_to t('nav.logout'), logout_path, method: :delete
-    - else
-      = link_to t('nav.login'), login_path
+    = link_to t('nav.blog'), ''

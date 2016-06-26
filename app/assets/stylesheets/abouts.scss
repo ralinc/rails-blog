@@ -1,6 +1,10 @@
 .social-links {
+  display: flex;
+  justify-content: space-around;
+
   i {
+    color: #777;
     font-size: 3em;
-    margin: 3em;
+    margin: 1em;
   }
 }

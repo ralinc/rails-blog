@@ -8,8 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
-gem 'haml'
 gem 'bcrypt'
+gem 'haml', '~> 4.1.0.beta.1'
 
 group :development, :test do
   gem 'sqlite3'
