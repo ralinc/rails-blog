@@ -14,17 +14,6 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 1rem;
-
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
 }
 
 @media (min-width: 768px) {

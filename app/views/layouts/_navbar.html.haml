@@ -1,15 +1,9 @@
 %nav
   .container
-    %ul
-      %li{ class: "<%= 'active' if current_page? root_path %>" }
-        = link_to t('nav.home'), root_path
-      %li{ class: "<%= 'active' if current_page? about_path %>" }
-        = link_to t('nav.about'), about_path
-      %li
-        = link_to t('nav.blog'), '#'
-      - if authenticated?
-        %li
-          = link_to t('nav.logout'), logout_path, method: :delete
-      - else
-        %li
-          = link_to t('nav.login'), login_path
+    = link_to t('nav.home'), root_path
+    = link_to t('nav.about'), about_path
+    = link_to t('nav.blog'), '#'
+    - if authenticated?
+      = link_to t('nav.logout'), logout_path, method: :delete
+    - else
+      = link_to t('nav.login'), login_path
