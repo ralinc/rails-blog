@@ -10,6 +10,7 @@ gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'bcrypt'
 gem 'haml', '~> 4.1.0.beta.1'
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3'

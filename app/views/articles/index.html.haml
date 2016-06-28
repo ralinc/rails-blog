@@ -1,1 +1,12 @@
-%p= 'WiP'
+%p= 'Work in progress ...'
+
+- if authenticated?
+  = link_to 'Create', new_article_path
+
+%h1= 'Articles'
+
+.articles
+  - @articles.each do |article|
+    .article-headline
+      %h3= article.title
+      = time_tag article.created_at

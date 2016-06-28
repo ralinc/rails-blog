@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     if authenticated? || authenticate
-      redirect_to root_path
+      redirect_to articles_path
     else
       render :new
     end
