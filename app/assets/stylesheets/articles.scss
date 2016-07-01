@@ -1,0 +1,37 @@
+.blog {
+  margin-bottom: 3rem;
+
+  header {
+    text-align: center;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  .total {
+    border-top: 1px solid #e5e5e5;
+
+    p {
+      color: #777;
+      font-size: .75rem;
+    }
+  }
+
+  article {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    time {
+      color: #999;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

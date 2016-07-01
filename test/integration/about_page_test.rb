@@ -5,10 +5,10 @@ class AboutPageTest < ActionDispatch::IntegrationTest
     get about_path
     assert_response :success
     assert_template 'abouts/show'
-    assert_select 'title', 'About me'
-    assert_select '.social-links a[href=?]', 'https://github.com/ralinc'
-    assert_select '.social-links a[href=?]', 'https://www.linkedin.com/in/ralinchimev'
-    assert_select '.social-links a[href=?]', 'https://facebook.com/ralin.chimev'
-    assert_select '.social-links a[href=?]', 'mailto:ralin.chimev@gmail.com'
+    assert_select 'title', 'About'
+    assert_select 'a[href=?]', 'https://github.com/ralinc'
+    assert_select 'a[href=?]', 'https://www.linkedin.com/in/ralinchimev'
+    assert_select 'a[href=?]', 'https://facebook.com/ralin.chimev'
+    assert_select 'a[href=?]', 'mailto:ralin.chimev@gmail.com'
   end
 end

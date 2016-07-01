@@ -5,7 +5,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     get login_path
     assert_template 'sessions/new'
     post login_path, session: { email: 'js@example.com', password: 'password' }
-    assert_redirected_to root_path
+    assert_redirected_to articles_path
   end
 
   test 'logout' do
