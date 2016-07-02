@@ -10,20 +10,20 @@
   }
 
   .total {
-    border-top: 1px solid #e5e5e5;
+    color: $color_blue;
+    border-top: 1px solid $color_blue;
 
     p {
-      color: #777;
       font-size: .75rem;
     }
   }
 
   article {
     padding: 2rem 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid $color_blue;
 
     time {
-      color: #999;
+      color: $color_blue;
     }
 
     h2 {

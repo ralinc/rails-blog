@@ -1,13 +1,13 @@
 footer {
   background-color: rgb(27, 28, 29);
-  color: $light_text_color;
+  color: $color_pale;
   padding: 2rem 0;
 
   p {
     text-align: center;
 
     a {
-      color: rgba(116, 119, 123, .5);
+      color: $color_light_blue;
     }
   }
 }

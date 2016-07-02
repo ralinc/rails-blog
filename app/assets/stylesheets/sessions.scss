@@ -7,10 +7,9 @@
     height: 2.5rem;
     margin: .25rem auto;
     padding: .375rem .75rem;
-    font-size: .75rem;
-    color: #555;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    font-size: .9rem;
+    background-color: $color_pale;
+    border: 1px solid $color_light_blue;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 
@@ -20,10 +19,10 @@
   }
 
   input[type=submit] {
-    color: #fff;
-    background-color: #444;
+    color: white;
+    background-color: $color_blue;
     cursor: pointer;
-    font-weight: 300;
-    letter-spacing: .1rem;
+    font-size: 1.1rem;
+    letter-spacing: .15rem;
   }
 }

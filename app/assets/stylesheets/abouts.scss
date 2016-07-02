@@ -19,13 +19,13 @@
       width: 5rem;
       height: 5rem;
       margin: 1rem;
-      border: 1px solid $light_text_color;
+      border: 1px solid $color_blue;
       border-radius: 50%;
 
       span {
         align-self: center;
         font-size: 2rem;
-        color: $primary_text_color;
+        color: $color_blue;
       }
     }
 
@@ -33,8 +33,8 @@
       flex: 2;
 
       h2 {
-        color: $primary_text_color;
-        font-weight: 100;
+        font-weight: 400;
+        color: $color_blue;
       }
     }
   }
@@ -46,7 +46,7 @@
   justify-content: space-around;
 
   i {
-    color: $primary_text_color;
+    color: $color_blue;
     font-size: 3em;
     margin: 1em;
   }

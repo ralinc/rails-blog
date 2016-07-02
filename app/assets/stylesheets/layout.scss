@@ -4,9 +4,12 @@ $small_width: 768px;
 $medium_width: 992px;
 $large_width: 1200px;
 
-$primary_text_color: #777;
-$light_text_color: #aaa;
-$dark_text_color: black;
+$color_text: #1B1B1E;
+$color_light_blue: #06AED5;
+$color_blue: #086788;
+$color_yellow: #F0C808;
+$color_pale: #FFF1D0;
+$color_red: #DD1C1A;
 
 * {
   box-sizing: border-box;
@@ -17,9 +20,17 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 1.6;
-  color: black;
-  background-color: white;
+  color: $color_text;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: .15rem;
 }
 
 .container {
