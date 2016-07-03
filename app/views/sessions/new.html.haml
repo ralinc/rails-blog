@@ -1,9 +1,8 @@
 - provide :title, 'Login'
-%h1= 'Login'
 
-.container
-  .login-form
-    = form_for(:session, url: login_path) do |f|
-      = f.email_field :email, placeholder: 'Email'
-      = f.password_field :password, placeholder: 'Password'
-      = f.submit 'Login'
+%h1= 'Login'
+.login-form
+  = form_for(:session, url: login_path) do |f|
+    = f.email_field :email, placeholder: 'Email'
+    = f.password_field :password, placeholder: 'Password'
+    = f.submit 'Login'

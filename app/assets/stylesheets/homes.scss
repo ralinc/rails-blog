@@ -1,16 +1,18 @@
 .stage {
   .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.5rem;
+    height: 50vh;
 
-    a {
-      font-weight: 100;
-      text-decoration: none;
-      outline: 0;
-      padding: .7rem 2rem;
-      margin-top: 2rem;
-      color: white;
-      background-color: $color_blue;
-      border-radius: 6px;
+    h1, p {
+      align-self: center;
+      margin: 0;
+    }
+
+    p {
+      color: $color_red;
     }
   }
 }

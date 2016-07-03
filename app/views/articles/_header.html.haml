@@ -1,5 +1,9 @@
 %header
   = image_tag gravatar_url("ralin.chimev@gmail.com", 64), alt: t('.title')
   %h1= t('.title')
+
+- if authenticated?
+  = link_to t('.new').upcase, new_article_path
+
 .total
   %p= "#{t('.number_of_posts').upcase}: #{@articles.size}"

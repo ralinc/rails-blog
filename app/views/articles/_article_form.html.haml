@@ -1,4 +1,4 @@
 = simple_form_for :article, url: articles_path do |f|
-  = f.input :title
-  = f.input :content, as: :text
-  = f.button :submit
+  = f.input :title, placeholder: 'Title', label: false
+  = f.input :content, as: :text, placeholder: 'Content', label: false
+  = f.button :submit, 'Save'

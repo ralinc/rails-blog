@@ -24,13 +24,18 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
 h1 {
   font-size: 2rem;
+  font-weight: 400;
   letter-spacing: .15rem;
+}
+
+h2 {
+  letter-spacing: .1rem;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
 
 a {
@@ -38,10 +43,19 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  overflow: auto;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.main {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: $small_width) {

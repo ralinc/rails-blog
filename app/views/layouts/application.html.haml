@@ -15,7 +15,7 @@
 
     - haml_tag_if current_page?(root_path), '.stage' do
       = render partial: 'layouts/navbar'
-      .container
+      .main.container
         = yield
 
     = render partial: 'layouts/footer'

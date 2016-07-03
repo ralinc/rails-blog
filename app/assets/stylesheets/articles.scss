@@ -1,6 +1,4 @@
 .blog {
-  margin-bottom: 3rem;
-
   header {
     text-align: center;
 
@@ -10,7 +8,7 @@
   }
 
   .total {
-    border-top: 1px solid $color_blue;
+    border-top: 1px solid $color_text;
 
     p {
       font-size: .75rem;
@@ -31,6 +29,18 @@
   }
 }
 
-.blog-post {
-  margin: 1rem 0 3rem;
+form.article {
+  input, textarea {
+    width: 100%;
+    margin: .15rem 0;
+    border: 1px solid $color_blue;
+  }
+
+  textarea {
+    min-height: 50vh;
+  }
+
+  input[type=submit] {
+    width: auto;
+  }
 }
