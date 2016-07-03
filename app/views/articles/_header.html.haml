@@ -1,0 +1,5 @@
+%header
+  = image_tag gravatar_url("ralin.chimev@gmail.com", 64), alt: t('.title')
+  %h1= t('.title')
+.total
+  %p= "#{t('.number_of_posts').upcase}: #{@articles.size}"

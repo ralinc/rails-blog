@@ -19,7 +19,6 @@ nav {
 
     .brand {
       flex: 1;
-      color: $color_red;
 
       @media (max-width: $extra_small_width) {
         display: none;

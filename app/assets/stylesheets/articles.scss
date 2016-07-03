@@ -10,7 +10,6 @@
   }
 
   .total {
-    color: $color_blue;
     border-top: 1px solid $color_blue;
 
     p {
@@ -22,10 +21,6 @@
     padding: 2rem 0;
     border-bottom: 1px solid $color_blue;
 
-    time {
-      color: $color_blue;
-    }
-
     h2 {
       margin: 0;
     }
@@ -34,4 +29,8 @@
       margin: 0;
     }
   }
+}
+
+.blog-post {
+  margin: 1rem 0 3rem;
 }

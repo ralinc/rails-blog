@@ -2,5 +2,6 @@ en:
   articles:
     index:
       title: Blog
-      header: Ralin Chimev
+    header:
+      title: Ralin Chimev
       number_of_posts: Number of posts

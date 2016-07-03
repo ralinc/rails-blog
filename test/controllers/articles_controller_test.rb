@@ -32,4 +32,16 @@ class ArticlesControllerTest < ActionController::TestCase
     post :create, article: { title: 'New', content: 'Sample' }
     assert_redirected_to login_path
   end
+
+  test 'shows article' do
+    get :show, id: articles(:lorem).id
+    assert_response :success
+    assert_template :show
+    assert_not_nil assigns(:article)
+  end
+
+  test 'shows articles page if article is not found' do
+    get :show, id: 'not_found'
+    assert_redirected_to articles_path
+  end
 end

@@ -3,13 +3,6 @@
   = link_to 'Create', new_article_path
 
 .blog
-  %header
-    = image_tag gravatar_url("ralin.chimev@gmail.com", 64), alt: t('.header')
-    %h1= t('.header')
-  .total
-    %p= "#{t('.number_of_posts').upcase}: #{@articles.size}"
-  - @articles.each do |article|
-    %article
-      = time_tag article.created_at
-      %h2= article.title
-      %p= truncate(article.content, length: 255)
+  = render partial: 'header'
+  = render @articles
+    

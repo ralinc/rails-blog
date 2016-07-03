@@ -33,6 +33,11 @@ h1 {
   letter-spacing: .15rem;
 }
 
+a {
+  color: $color_blue;
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 1rem;
