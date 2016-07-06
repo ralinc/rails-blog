@@ -1,5 +1,9 @@
 - provide :title, @article.title
 
-%article.blog-post
-  %h1= @article.title
-  %p= @article.content
+.blog-post
+  - if authenticated?
+    .actions
+      = link_to 'Delete', @article, method: :delete
+  %article
+    %h1= @article.title
+    %p= @article.content

@@ -29,18 +29,24 @@
   }
 }
 
-form.article {
-  input, textarea {
-    width: 100%;
-    margin: .15rem 0;
-    border: 1px solid $color_blue;
+.blog-post {
+  .actions {
+    border-bottom: 1px solid $color_blue;
   }
 
-  textarea {
-    min-height: 50vh;
-  }
+  form {
+    input, textarea {
+      width: 100%;
+      margin: .15rem 0;
+      border: 1px solid $color_blue;
+    }
 
-  input[type=submit] {
-    width: auto;
+    textarea {
+      min-height: 50vh;
+    }
+
+    input[type=submit] {
+      width: auto;
+    }
   }
 }
