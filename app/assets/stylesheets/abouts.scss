@@ -19,13 +19,13 @@
       width: 5rem;
       height: 5rem;
       margin: 1rem;
-      border: 1px solid $color_light_blue;
+      border: 1px solid $color_blue;
       border-radius: 50%;
 
       span {
         align-self: center;
         font-size: 2rem;
-        color: $color_light_blue;
+        color: $color_blue;
       }
     }
 
@@ -33,7 +33,7 @@
       flex: 2;
 
       h2 {
-        color: $color_light_blue;
+        color: $color_blue;
       }
     }
   }
