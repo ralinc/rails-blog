@@ -8,6 +8,5 @@ class AboutPageTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', 'https://www.linkedin.com/in/ralinchimev'
     assert_select 'a[href=?]', 'https://facebook.com/ralin.chimev'
     assert_select 'a[href=?]', 'mailto:ralin.chimev@gmail.com'
-    assert_select 'footer'
   end
 end

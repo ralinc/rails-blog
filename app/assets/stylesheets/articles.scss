@@ -30,8 +30,13 @@
 }
 
 .blog-post {
-  .actions {
+  header {
     border-bottom: 1px solid $color_blue;
+    margin-bottom: 2rem;
+
+    a {
+      margin-right: 1rem;
+    }
   }
 
   form {

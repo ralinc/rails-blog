@@ -1,9 +1,7 @@
 - provide :title, @article.title
 
 .blog-post
-  - if authenticated?
-    .actions
-      = link_to 'Delete', @article, method: :delete
+  = render partial: 'article_header'
   %article
     %h1= @article.title
     %p= @article.content

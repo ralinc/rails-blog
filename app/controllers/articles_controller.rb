@@ -5,7 +5,13 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def show
+    @article = Article.find_by id: article_id
+    redirect_to articles_path unless @article
+  end
+
   def new
+    @article = Article.new
   end
 
   def create
@@ -17,13 +23,21 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show
-    @article = Article.find_by id: article_id
-    redirect_to articles_path unless @article
+  def edit
+    @article = Article.find article_id
+  end
+
+  def update
+    @article = Article.find article_id
+    if @article.update_attributes article_params
+      redirect_to @article
+    else
+      render :edit
+    end
   end
 
   def destroy
-    Article.find(params[:id]).destroy
+    Article.find(article_id).destroy
     redirect_to articles_url
   end
 

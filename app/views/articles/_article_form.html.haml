@@ -1,5 +1,4 @@
-.blog-post
-  = simple_form_for :article, url: articles_path do |f|
-    = f.input :title, placeholder: 'Title', label: false
-    = f.input :content, as: :text, placeholder: 'Content', label: false
-    = f.button :submit, 'Create'
+= simple_form_for @article do |f|
+  = f.input :title, placeholder: 'Title', label: false
+  = f.input :content, as: :text, placeholder: 'Content', label: false
+  = f.button :submit, 'Save'
