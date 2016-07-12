@@ -1,24 +1,32 @@
 .featured {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @media (max-width: $small_width) {
-    flex-direction: column;
+  @media (min-width: $extra_small_width) {
+    flex-direction: row;
   }
 
   .item {
     flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
+
+    @media (min-width: $small_width) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
 
     .icon {
       display: flex;
       justify-content: center;
       width: 5rem;
       height: 5rem;
-      margin: 1rem;
+      margin: 1rem 1rem 1rem 0;
       border: 1px solid $color_blue;
       border-radius: 50%;
 
