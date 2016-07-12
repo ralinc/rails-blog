@@ -1,13 +1,16 @@
 footer {
-  background-color: rgb(27, 28, 29);
-  color: $color_pale;
-  padding: 2rem 0;
+  margin: 2rem 0;
+
+  .container {
+    border-top: 1px solid $color_text;
+  }
 
   p {
     text-align: center;
+    margin: 2rem 0;
 
     a {
-      color: $color_light_blue;
+      color: $color_blue;
     }
   }
 }
