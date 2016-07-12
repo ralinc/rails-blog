@@ -6,33 +6,36 @@ nav {
 
   .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 
-    @media (max-width: $extra_small_width) {
-      justify-content: space-around;
+    @media (min-width: $super_small_width) {
+      flex-direction: row;
     }
 
-    @media (max-width: $super_small_width) {
-      flex-direction: column;
+    @media (min-width: $extra_small_width) {
+      justify-content: flex-end;
     }
 
     .brand {
       flex: 1;
+      display: none;
 
-      @media (max-width: $extra_small_width) {
-        display: none;
+      @media (min-width: $extra_small_width) {
+        display: block;
+        margin: 1rem;
       }
     }
 
     a {
-      color: $color_blue;
-      padding: 0.875rem;
-      text-decoration: none;
+      color: $color_text;
+      margin: .5rem;
+      border-bottom: 1px solid transparent;
       display: block;
 
       &:hover {
-        color: $color_text;
+        border-bottom: 1px solid $color_text;
       }
 
       &:hover, &:link, &:active, &:visited {
@@ -40,9 +43,8 @@ nav {
         outline: 0;
       }
 
-      @media (max-width: $extra_small_width) {
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
+      @media (min-width: $extra_small_width) {
+        margin: 1rem;
       }
     }
   }
