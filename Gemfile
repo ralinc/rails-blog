@@ -6,11 +6,11 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'bcrypt'
 gem 'haml', '~> 4.1.0.beta.1'
 gem 'simple_form'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'sqlite3'
