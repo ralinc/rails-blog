@@ -1,15 +1,27 @@
 module ApplicationHelper
   MARKDOWN_OPTIONS = {
-    filter_html: true,
+    filter_html: false,
+    hard_wrap: true,
+    no_styles: true,
+    prettify: true,
+    safe_links_only: true,
     link_attributes: { rel: 'nofollow', target: '_blank' },
-    space_after_headers: true,
-    fenced_code_blocks: true
+    with_toc_data: true
   }.freeze
 
   MARKDOWN_EXTENSIONS = {
     autolink: true,
+    fenced_code_blocks: true,
+    footnotes: false,
+    highlight: true,
+    no_images: true,
+    no_intra_emphasis: true,
+    quote: true,
+    space_after_headers: false,
+    strikethrough: true,
     superscript: true,
-    disable_indented_code_blocks: true
+    tables: true,
+    underline: true
   }.freeze
 
   def gravatar_url(email, size)
