@@ -47,33 +47,6 @@ textarea {
   overflow: auto;
 }
 
-blockquote {
-  background: #f9f9f9;
-  border-left: .2rem solid $color_blue;
-  margin: 1rem 0;
-  padding: 1rem;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-  color: $color_blue;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.5em;
-}
-
-pre {
-  border-radius: .5rem;
-  border: 1px dashed $color_light_blue;
-  padding: 1rem;
-}
-
-pre, code {
-  white-space: pre;
-}
-
 .container {
   margin: 0 auto;
   padding-left: 1rem;
