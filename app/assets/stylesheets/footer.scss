@@ -2,15 +2,15 @@ footer {
   margin: 2rem 0;
 
   .container {
-    border-top: 1px solid $color_text;
+    border-top: 1px solid $color-text;
   }
 
   p {
-    text-align: center;
     margin: 2rem 0;
+    text-align: center;
 
     a {
-      color: $color_blue;
+      color: $color-blue;
     }
   }
 }

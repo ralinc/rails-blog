@@ -1,49 +1,52 @@
 nav {
   letter-spacing: .1rem;
-  padding: 1.5rem 0;
   margin-bottom: 1rem;
+  padding: 1.5rem 0;
   text-transform: uppercase;
 
   .container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-    @media (min-width: $super_small_width) {
+    @media (min-width: $super-small-width) {
       flex-direction: row;
     }
 
-    @media (min-width: $extra_small_width) {
+    @media (min-width: $extra-small-width) {
       justify-content: flex-end;
     }
 
     .brand {
-      flex: 1;
       display: none;
+      flex: 1;
 
-      @media (min-width: $extra_small_width) {
+      @media (min-width: $extra-small-width) {
         display: block;
         margin: 1rem;
       }
     }
 
     a {
-      color: $color_text;
-      margin: .5rem;
       border-bottom: 1px solid transparent;
+      color: $color-text;
       display: block;
+      margin: .5rem;
 
       &:hover {
-        border-bottom: 1px solid $color_text;
+        border-bottom: 1px solid $color-text;
       }
 
-      &:hover, &:link, &:active, &:visited {
-        text-decoration: none;
+      &:hover,
+      &:link,
+      &:active,
+      &:visited {
         outline: 0;
+        text-decoration: none;
       }
 
-      @media (min-width: $extra_small_width) {
+      @media (min-width: $extra-small-width) {
         margin: 1rem;
       }
     }

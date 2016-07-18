@@ -2,17 +2,18 @@
   .wrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-size: 1.5rem;
     height: 50vh;
+    justify-content: center;
 
-    h1, p {
+    h1,
+    p {
       align-self: center;
       margin: 0;
     }
 
     p {
-      color: $color_red;
+      color: $color-red;
     }
   }
 }

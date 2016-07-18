@@ -1,26 +1,26 @@
-$super_small_width: 320px;
-$extra_small_width: 480px;
-$small_width: 768px;
-$medium_width: 992px;
-$large_width: 1200px;
+$super-small-width: 320px;
+$extra-small-width: 480px;
+$small-width: 768px;
+$medium-width: 992px;
+$large-width: 1200px;
 
-$color_text: #1B1B1E;
-$color_light_blue: #06AED5;
-$color_blue: #086788;
-$color_yellow: #F0C808;
-$color_pale: #FFF1D0;
-$color_red: #DD1C1A;
+$color-text: #1b1b1e;
+$color-light-blue: #06aed5;
+$color-blue: #086788;
+$color-pale: #fff1d0;
+$color-red: #dd1c1a;
+$color-background: #f9f9f9;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-weight: 300;
+  color: $color-text;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.875rem;
+  font-size: .875rem;
+  font-weight: 300;
   line-height: 1.6;
-  color: $color_text;
   margin: 0;
 }
 
@@ -34,12 +34,16 @@ h2 {
   letter-spacing: .1rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
 }
 
 a {
-  color: $color_blue;
+  color: $color-blue;
   text-decoration: none;
 }
 
@@ -54,33 +58,33 @@ textarea {
 }
 
 .main {
-  margin-top: 2rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
-@media (min-width: $small_width) {
+@media (min-width: $small-width) {
   .container {
     width: 700px;
   }
 }
 
-@media (min-width: $medium_width) {
+@media (min-width: $medium-width) {
   .container {
     width: 900px;
   }
 }
 
-@media (min-width: $large_width) {
+@media (min-width: $large-width) {
   .container {
     width: 1000px;
   }
 }
 
 .stage {
-  background-image: image-url("background.jpg");
+  background-image: image-url('background.jpg');
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
   height: 100vh;
+  width: 100%;
 }

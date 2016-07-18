@@ -8,7 +8,7 @@
   }
 
   .total {
-    border-top: 1px solid $color_text;
+    border-top: 1px solid $color-text;
 
     p {
       font-size: .75rem;
@@ -30,7 +30,7 @@
 
 .blog-post {
   header {
-    border-bottom: 1px solid $color_blue;
+    border-bottom: 1px solid $color-blue;
     margin-bottom: 2rem;
 
     a {
@@ -39,56 +39,58 @@
   }
 
   form {
-    input, textarea {
-      width: 100%;
+    input,
+    textarea {
+      border: 1px solid $color-blue;
       margin: .15rem 0;
-      border: 1px solid $color_blue;
+      width: 100%;
     }
 
     textarea {
       min-height: 50vh;
     }
 
-    input[type=submit] {
+    [type=submit] {
       width: auto;
     }
   }
-  
+
   blockquote {
-    background: #f9f9f9;
-    border-left: .2rem solid $color_blue;
+    background: $color-background;
+    border-left: .2rem solid $color-blue;
     margin: 1rem 0;
     padding: 1rem;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: '\201C''\201D''\2018''\2019';
   }
 
-  blockquote:before {
-    color: $color_blue;
+  blockquote::before {
+    color: $color-blue;
     content: open-quote;
     font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.5em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.5em;
   }
 
-  pre, code {
+  pre,
+  code {
     font-family: 'Inconsolata';
     overflow: auto;
+    white-space: pre;
     word-break: normal;
     word-wrap: normal;
-    white-space: pre;
   }
 
   pre {
-    padding: 1rem;
-    font-size: 90%;
-    background-color: #f7f7f7;
+    background-color: $color-background;
     border-radius: 3px;
+    font-size: 90%;
+    padding: 1rem;
   }
 
   .note {
-    background: $color_pale;
-    border-left: 1px solid $color_blue;
+    background: $color-pale;
+    border-left: 1px solid $color-blue;
     padding: .75rem 1rem;
   }
 }
