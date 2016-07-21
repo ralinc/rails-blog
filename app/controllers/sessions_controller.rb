@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  force_ssl if: :ssl?
+
   def new
   end
 
