@@ -21,10 +21,15 @@ nav {
     .brand {
       display: none;
       flex: 1;
+      margin: 1rem;
 
       @media (min-width: $extra-small-width) {
         display: block;
-        margin: 1rem;
+      }
+
+      img {
+        border-radius: 50%;
+        vertical-align: middle;
       }
     }
 

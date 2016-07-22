@@ -1,7 +1,7 @@
 %nav
   .container
     .brand
-      .p= t('brand') 
+      = image_tag gravatar_url("ralin.chimev@gmail.com", 32), alt: t('articles.header.title')
     = link_to t('nav.home'), root_path
     = link_to t('nav.about'), about_path
     = link_to t('nav.blog'), articles_path
