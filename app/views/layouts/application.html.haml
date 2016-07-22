@@ -7,7 +7,7 @@
     %meta{ name: "description", content: "#{yield :title}" }
     %meta{ name: "author", content: "Ralin Chimev" }
     %title= yield :title
-    = favicon_link_tag 'open-source-logo.png', type: 'image/png'
+    = favicon_link_tag 'favicon.png', type: 'image/png'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
