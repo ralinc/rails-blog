@@ -1,0 +1,30 @@
+.article-list {
+  h1 {
+    text-align: center;
+  }
+
+  .article-list-total {
+    border-top: 1px solid $color-grey;
+
+    p {
+      color: $color-grey;
+      font-size: .75rem;
+    }
+  }
+
+  article {
+    margin: 2rem 0;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    time {
+      color: $color-grey;
+    }
+  }
+}

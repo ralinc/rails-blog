@@ -1,92 +1,17 @@
-$super-small-width: 320px;
-$extra-small-width: 480px;
-$small-width: 768px;
-$medium-width: 992px;
-$large-width: 1200px;
-
-$color-text: #1b1b1e;
-$color-light-blue: #06aed5;
-$color-blue: #086788;
-$color-pale: #fff1d0;
-$color-red: #dd1c1a;
-$color-top-border: #e5e5e5;
-
-$background-code-block: #f9f9f9;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: $color-text;
-  font-family: 'Roboto', sans-serif;
-  font-size: .875rem;
-  font-weight: 300;
-  line-height: 1.6;
-  margin: 0;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: .15rem;
-}
-
-h2 {
-  letter-spacing: .1rem;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-}
-
-a {
-  color: $color-blue;
-  text-decoration: none;
-}
-
-textarea {
-  overflow: auto;
-}
-
-.container {
+.layout-container {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
 
-.main {
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: $small-width) {
-  .container {
+  @media (min-width: $small-width) {
     width: 700px;
   }
-}
 
-@media (min-width: $medium-width) {
-  .container {
+  @media (min-width: $medium-width) {
     width: 900px;
   }
-}
 
-@media (min-width: $large-width) {
-  .container {
+  @media (min-width: $large-width) {
     width: 1000px;
   }
-}
-
-.stage {
-  background-image: image-url('background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
 }

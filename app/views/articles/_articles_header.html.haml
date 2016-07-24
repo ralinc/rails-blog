@@ -4,5 +4,5 @@
 - if authenticated?
   = link_to t('articles.header.new').upcase, new_article_path
 
-.total
+.article-list-total
   %p= "#{t('articles.header.number_of_posts').upcase}: #{@articles.size}"

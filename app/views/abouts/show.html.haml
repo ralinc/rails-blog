@@ -3,18 +3,18 @@
 %h1= t('.title')
 %p= t('.overview')
 
-.featured
-  - t('.featured').each do |item|
-    .item
-      .icon
-        %span{class: "fa fa-#{item[:icon]}", "aria-hidden" => "true"}
-      .text
-        %h2= item[:header]
-        %p= item[:text]
+.layout-features
+  - t('.layout-features').each do |feature|
+    .feature
+      .feature-image
+        %span{class: "fa fa-#{feature[:icon]}", "aria-hidden" => "true"}
+      .feature-text
+        %h2= feature[:title]
+        %p= feature[:text]
 
 %h2= t('.contact')
-.social
-  = link_to icon('github-square'), 'https://github.com/ralinc', target: '_blank'
-  = link_to icon('linkedin-square'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
-  = link_to icon('facebook-official'), 'https://facebook.com/ralin.chimev', target: '_blank'
-  = link_to icon('envelope'), 'mailto:ralin.chimev@gmail.com'
+.layout-social
+  = link_to icon('github-square', class: 'social-link'), 'https://github.com/ralinc', target: '_blank'
+  = link_to icon('linkedin-square', class: 'social-link'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
+  = link_to icon('facebook-official', class: 'social-link'), 'https://facebook.com/ralin.chimev', target: '_blank'
+  = link_to icon('envelope', class: 'social-link'), 'mailto:ralin.chimev@gmail.com'

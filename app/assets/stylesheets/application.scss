@@ -2,10 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import 'base';
 @import 'layout';
 @import 'navbar';
 @import 'footer';
-@import 'homes';
-@import 'abouts';
-@import 'articles';
 @import 'sessions';
+@import 'home';
+@import 'about';
+@import 'articles';

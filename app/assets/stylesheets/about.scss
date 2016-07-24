@@ -1,0 +1,19 @@
+@import 'about/feature';
+@import 'about/social_link';
+
+.layout-features {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $extra-small-width) {
+    flex-direction: row;
+  }
+}
+
+.layout-social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}

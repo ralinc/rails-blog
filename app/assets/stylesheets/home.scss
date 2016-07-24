@@ -1,5 +1,12 @@
-.stage {
-  .wrap {
+.home {
+  background-image: image-url('background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  .home-wrap {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -10,6 +17,7 @@
     p {
       align-self: center;
       margin: 0;
+      text-align: center;
     }
 
     p {

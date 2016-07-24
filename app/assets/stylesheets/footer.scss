@@ -1,13 +1,9 @@
-footer {
+.footer {
   margin: 2rem 0;
 
   p {
+    border-top: 1px solid $color-grey;
     padding: 2rem 0;
     text-align: center;
-    border-top: 1px solid $color-top-border;
-
-    a {
-      color: $color-blue;
-    }
   }
 }

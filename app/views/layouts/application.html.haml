@@ -13,9 +13,9 @@
     = csrf_meta_tags
   %body
 
-    - haml_tag_if current_page?(root_path), '.stage' do
+    - haml_tag_if current_page?(root_path), '.home' do
       = render partial: 'layouts/navbar'
-      .main.container
+      .layout-container
         = yield
 
     = render partial: 'layouts/footer'

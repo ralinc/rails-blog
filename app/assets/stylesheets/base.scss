@@ -1,0 +1,56 @@
+$super-small-width: 320px;
+$extra-small-width: 480px;
+$small-width: 768px;
+$medium-width: 992px;
+$large-width: 1200px;
+
+$color-text: #1b1b1e;
+$color-light-blue: #06aed5;
+$color-blue: #086788;
+$color-pale: #fff1d0;
+$color-red: #dd1c1a;
+$color-grey: #808080;
+$color-white: #fff;
+
+$background-code-block: #f9f9f9;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-white;
+  color: $color-text;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .15rem;
+}
+
+h2 {
+  letter-spacing: .1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+textarea {
+  overflow: auto;
+}

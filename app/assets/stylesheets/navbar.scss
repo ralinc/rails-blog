@@ -1,10 +1,10 @@
-nav {
+.navbar {
   letter-spacing: .1rem;
   margin-bottom: 1rem;
   padding: 1.5rem 0;
   text-transform: uppercase;
 
-  .container {
+  .navbar-layout {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -17,44 +17,44 @@ nav {
     @media (min-width: $extra-small-width) {
       justify-content: flex-end;
     }
+  }
 
-    .brand {
-      display: none;
-      flex: 1;
-      margin: 1rem;
+  .navbar-brand {
+    display: none;
+    flex: 1;
+    margin: 1rem;
 
-      @media (min-width: $extra-small-width) {
-        display: block;
-      }
-
-      img {
-        border-radius: 50%;
-        vertical-align: middle;
-      }
+    @media (min-width: $extra-small-width) {
+      display: block;
     }
 
-    a {
-      border-bottom: 1px solid transparent;
-      color: $color-text;
-      display: block;
-      margin: .5rem;
+    img {
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
 
-      &:hover {
-        transition: all 0.4s ease-in-out;
-        border-bottom: 1px solid $color-text;
-      }
+  a {
+    border-bottom: 1px solid transparent;
+    color: $color-text;
+    display: block;
+    margin: .5rem;
 
-      &:hover,
-      &:link,
-      &:active,
-      &:visited {
-        outline: 0;
-        text-decoration: none;
-      }
+    &:hover {
+      border-bottom: 1px solid $color-text;
+      transition: all .4s ease-in-out;
+    }
 
-      @media (min-width: $extra-small-width) {
-        margin: 1rem;
-      }
+    &:hover,
+    &:link,
+    &:active,
+    &:visited {
+      outline: 0;
+      text-decoration: none;
+    }
+
+    @media (min-width: $extra-small-width) {
+      margin: 1rem;
     }
   }
 }
