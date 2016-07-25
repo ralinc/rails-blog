@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'homes#show'
+  root to: 'home#show'
 
-  resource :about, only: [:show]
   resources :articles
 
+  get 'about', to: 'about#show'
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
