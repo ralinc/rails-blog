@@ -1,24 +1,22 @@
 .article-list {
-  h1 {
+  header {
     text-align: center;
+
+    .fa {
+      font-size: 2rem;
+    }
   }
 
   .article-list-total {
     border-top: 1px solid $color-grey;
-
-    p {
-      color: $color-grey;
-      font-size: .75rem;
-    }
+    color: $color-grey;
+    font-size: .75rem;
   }
 
   article {
     margin: 2rem 0;
 
-    h2 {
-      margin: 0;
-    }
-
+    h2,
     p {
       margin: 0;
     }
