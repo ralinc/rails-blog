@@ -9,7 +9,7 @@ class ViewArticleTest < ActionDispatch::IntegrationTest
     get article_path(@article)
     assert_response :success
     assert_template 'articles/show'
-    assert_select 'title', @article.title
+    assert_select 'title', "#{@article.title} - Ralin Chimev"
     assert_select 'a', 'BACK'
     assert_select 'a', text: 'EDIT', count: 0
     assert_select 'a', text: 'DELETE', count: 0
@@ -22,7 +22,7 @@ class ViewArticleTest < ActionDispatch::IntegrationTest
     get article_path(@article)
     assert_response :success
     assert_template 'articles/show'
-    assert_select 'title', @article.title
+    assert_select 'title', "#{@article.title} - Ralin Chimev"
     assert_select 'a', 'BACK'
     assert_select 'a', 'EDIT'
     assert_select 'a', 'DELETE'

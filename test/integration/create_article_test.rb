@@ -6,7 +6,9 @@ class CreateArticleTest < ActionDispatch::IntegrationTest
     get new_article_path
     assert_response :success
     assert_difference 'Article.count', 1 do
-      post_via_redirect articles_path, article: { title: 'A', content: 'B' }
+      post_via_redirect articles_path, article: { title: 'a',
+                                                  content: 'b',
+                                                  slug: 'c' }
     end
   end
 
@@ -15,7 +17,7 @@ class CreateArticleTest < ActionDispatch::IntegrationTest
     get new_article_path
     assert_response :success
     assert_no_difference 'Article.count' do
-      post articles_path, article: { title: '', content: '' }
+      post articles_path, article: { title: '', content: '', slug: '' }
     end
     assert_template 'articles/new'
   end

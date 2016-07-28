@@ -1,13 +1,12 @@
 class ArticlesController < ApplicationController
   before_action :force_login, except: [:index, :show]
+  before_action :article, only: [:show, :edit]
 
   def index
     @articles = Article.all
   end
 
   def show
-    @article = Article.find_by id: article_id
-    redirect_to articles_path unless @article
   end
 
   def new
@@ -24,30 +23,29 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find article_id
   end
 
   def update
-    @article = Article.find article_id
-    if @article.update_attributes article_params
-      redirect_to @article
+    if article.update_attributes article_params
+      redirect_to article
     else
+      article.slug = params[:id] if article.slug.blank?
       render :edit
     end
   end
 
   def destroy
-    Article.find(article_id).destroy
+    article.destroy
     redirect_to articles_url
   end
 
   private
 
   def article_params
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :slug, :content)
   end
 
-  def article_id
-    @article_id ||= params[:id]
+  def article
+    @article ||= Article.find_by slug: params[:id]
   end
 end

@@ -10,8 +10,4 @@ class ListArticlesTest < ActionDispatch::IntegrationTest
       assert_select 'a', article.title
     end
   end
-
-  test 'order should be most recent first' do
-    assert_equal articles(:most_recent), Article.first
-  end
 end

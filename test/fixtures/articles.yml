@@ -1,14 +1,17 @@
 lorem:
   title: Lorem Ipsum
   content: Lorem Ipsum is simply dummy text
+  slug: lorem-ipsum
 
 <% 5.times do |n| %>
 article_<%= n %>:
   title: <%= "Title #{n}" %>
   content: <%= "Content #{n}" %>
+  slug: 'title-#{n}'
   created_at: <%= 1.hour.ago %>
 <% end %>
 
 most_recent:
   title: Most Recent
   content: Fresh content goes here
+  slug: recent
