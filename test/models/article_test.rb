@@ -63,9 +63,9 @@ class ArticleTest < ActiveSupport::TestCase
     end
   end
 
-  test 'to_param returns slug' do
+  test 'to_param returns id-slug' do
     article = articles(:lorem)
-    assert_equal article.slug, article.to_param
+    assert_equal "#{article.id}-#{article.slug}", article.to_param
   end
 
   test 'order should be most recent first' do

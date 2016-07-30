@@ -29,7 +29,6 @@ class ArticlesController < ApplicationController
     if article.update_attributes article_params
       redirect_to article
     else
-      article.slug = params[:id] if article.slug.blank?
       render :edit
     end
   end
@@ -46,6 +45,6 @@ class ArticlesController < ApplicationController
   end
 
   def article
-    @article ||= Article.find_by slug: params[:id]
+    @article ||= Article.find params[:id]
   end
 end

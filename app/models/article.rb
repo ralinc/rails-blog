@@ -7,6 +7,6 @@ class Article < ActiveRecord::Base
                    format: { with: /\A[0-9a-z-]+\z/ }
 
   def to_param
-    slug
+    "#{id}-#{slug}"
   end
 end
