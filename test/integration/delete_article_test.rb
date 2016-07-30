@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DeleteArticleTest < ActionDispatch::IntegrationTest
   def setup
-    @article = articles(:lorem)
+    @article = articles(:published)
   end
 
   test 'deletes article' do

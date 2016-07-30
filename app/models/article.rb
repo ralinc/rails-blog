@@ -6,6 +6,8 @@ class Article < ActiveRecord::Base
                    uniqueness: true,
                    format: { with: /\A[0-9a-z-]+\z/ }
 
+  enum status: [:wip, :published]
+
   def to_param
     "#{id}-#{slug}"
   end

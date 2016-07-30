@@ -1,7 +1,19 @@
-lorem:
+published:
   title: Lorem Ipsum
   content: Lorem Ipsum is simply dummy text
   slug: lorem-ipsum
+  status: 1
+
+wip:
+  title: work in progress
+  content: Work in progress ...
+  slug: work-in-progress
+  status: 0
+
+most_recent:
+  title: Most Recent
+  content: Fresh content goes here
+  slug: recent
 
 <% 5.times do |n| %>
 article_<%= n %>:
@@ -10,8 +22,3 @@ article_<%= n %>:
   slug: 'title-#{n}'
   created_at: <%= 1.hour.ago %>
 <% end %>
-
-most_recent:
-  title: Most Recent
-  content: Fresh content goes here
-  slug: recent

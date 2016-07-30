@@ -3,10 +3,12 @@ class ArticlesController < ApplicationController
   before_action :article, only: [:show, :edit]
 
   def index
-    @articles = Article.all
+    force_login if params[:show]
+    @articles = ArticlesService.articles params[:show]
   end
 
   def show
+    force_login if article.status != 'published'
   end
 
   def new
@@ -14,8 +16,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new article_params
-    if @article.save
+    success, @article = ArticlesService.create_article article_params
+    if success
       redirect_to articles_path
     else
       render :new
@@ -41,7 +43,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :slug, :content)
+    params.require(:article).permit(:title, :slug, :status, :content)
   end
 
   def article

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class EditArticleTest < ActionDispatch::IntegrationTest
   def setup
-    @article = articles(:lorem)
+    @article = articles(:published)
   end
 
   test 'edits article' do

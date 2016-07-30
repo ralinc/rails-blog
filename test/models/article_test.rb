@@ -22,7 +22,7 @@ class ArticleTest < ActiveSupport::TestCase
   end
 
   test 'is not valid if slug is not unique' do
-    article = Article.new title: 'a', content: 'b', slug: articles(:lorem).slug
+    article = Article.new title: 'a', content: 'b', slug: articles(:wip).slug
     assert_not article.valid?
   end
 
@@ -64,7 +64,7 @@ class ArticleTest < ActiveSupport::TestCase
   end
 
   test 'to_param returns id-slug' do
-    article = articles(:lorem)
+    article = articles(:published)
     assert_equal "#{article.id}-#{article.slug}", article.to_param
   end
 

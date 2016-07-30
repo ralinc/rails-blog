@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ViewArticleTest < ActionDispatch::IntegrationTest
   def setup
-    @article = articles(:lorem)
+    @article = articles(:published)
   end
 
   test 'views article as guest user' do

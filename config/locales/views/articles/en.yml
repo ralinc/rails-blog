@@ -5,4 +5,7 @@ en:
     header:
       title: Ralin Chimev
       new: New
+      wip: WiP
+      published: Published
+      all: All
       number_of_posts: Number of posts
