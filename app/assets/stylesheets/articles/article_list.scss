@@ -2,8 +2,14 @@
   header {
     text-align: center;
 
-    .fa {
-      font-size: 2rem;
+    h1 {
+      margin-top: 0;
+    }
+
+    img {
+      border: 1px solid $color-grey;
+      border-radius: 50%;
+      box-shadow: 0 5px 5px -3px $color-grey;
     }
   }
 
@@ -11,6 +17,7 @@
     border-top: 1px solid $color-grey;
     color: $color-grey;
     font-size: .75rem;
+    margin-bottom: 3rem;
   }
 
   article {
