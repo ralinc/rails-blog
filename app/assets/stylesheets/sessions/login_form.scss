@@ -1,23 +1,31 @@
 .login-form {
-  padding: 3rem 0;
+  margin: 3rem 0 6rem;
 
-  input {
-    border: 1px solid $color-light-blue;
-    border-radius: 4px;
-    display: block;
-    font-size: .9rem;
-    height: 2.5rem;
-    margin: .5rem auto;
-    padding: .375rem .75rem;
+  .login-form-panel {
+    border: 1px solid $color-silver;
+    margin: 0 auto;
+    padding: 2rem;
     width: 100%;
 
     @media (min-width: $extra-small-width) {
-      width: 20rem;
+      width: 25rem;
     }
+  }
+
+  input {
+    border: 1px solid $color-light-blue;
+    border-radius: 2px;
+    display: block;
+    font-size: .9rem;
+    height: 4rem;
+    margin: .5rem auto;
+    padding: .375rem .75rem;
+    width: 100%;
   }
 
   [type=submit] {
     background-color: $color-blue;
+    border: 0;
     color: $color-white;
     cursor: pointer;
     font-size: 1.1rem;

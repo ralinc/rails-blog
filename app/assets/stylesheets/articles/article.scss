@@ -12,7 +12,7 @@
     }
 
     blockquote {
-      background: $background-code-block;
+      background: $color-light-grey;
       border-left: .2rem solid $color-blue;
       margin: 1rem 0;
       padding: 1rem;
@@ -38,7 +38,7 @@
     }
 
     pre {
-      background-color: $background-code-block;
+      background-color: $color-light-grey;
       border-radius: 3px;
       font-size: 90%;
       padding: 1rem;
