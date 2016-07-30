@@ -1,7 +1,8 @@
 %nav.navbar
   .layout-container.navbar-layout
     .navbar-brand
-      = image_tag gravatar_url("me@ralin.net", 36), alt: t('brand')
+      %span.fa.fa-beer
+      = t('brand')
     = link_to t('nav.home'), root_path
     = link_to t('nav.about'), about_path
     = link_to t('nav.blog'), articles_path
