@@ -2,12 +2,12 @@
 @import 'about/social_link';
 
 .layout-features {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: $extra-small-width) {
+  @media (min-width: $small-width) {
     flex-direction: row;
   }
 }

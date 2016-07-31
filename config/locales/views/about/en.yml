@@ -2,16 +2,16 @@ en:
   about:
     show:
       title: About
-      overview: I am a software developer mostly interested in web development.
+      overview: I am a software engineer mostly interested in developing practical web applications and services. I've been writing software since 1998. As of late I use mainly Ruby and JavaScript to build stuff. Still I am open to any technology that is proved suitable for the particular business need. In my spare time I contribute to open source projects as I believe that open source is the right way to build world-class applications. I am obsessed with writing simple code that is easy to read and understand. I do not always succeed in crafting clean code but I've never stopped trying and improving.
       layout-features: [{
               icon: "code",
               title: "Apps",
-              text: "I love developing clean and simple web and mobile applications. I create smart designs that improves the user experience and are easy to work with. My goal is to build robust web solutions that simply work.",
+              text: "I love creating clean web applications with a smart design that improves the user experience and is easy to work with. Everyone is happy when software simply works. My goal is to make users happy by crafting robust and intuitive apps.",
               link: "https://github.com/ralinc"
             }, {
               icon: "pencil",
               title: "Blog",
-              text: "My blog is mostly technical and reflects on my daily work. You can find posts on using open source frameworks and tools, creating web applications, good practices, clean code, refactoring, TDD, BDD.",
-              link: ""
+              text: "My blog is mostly technical and reflects on my daily work. You can find writings on using open source frameworks and tools, creating web applications, good practices, bad practices, clean code, anti-patterns, refactoring, TDD, BDD.",
+              link: "/blog"
             }]
       contact: Get in touch
