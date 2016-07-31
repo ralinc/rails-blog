@@ -1,9 +1,9 @@
 = simple_form_for @article do |f|
   = f.input :title
   = f.input :slug
+  = f.input :content, as: :text
   = f.input :status, collection: Article.statuses,
                      label_method: :first,
                      value_method: :first,
                      include_blank: false
-  = f.input :content, as: :text
   = f.button :submit, 'Save'

@@ -4,7 +4,7 @@
   .login-form-panel {
     border: 1px solid $color-silver;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
     width: 100%;
 
     @media (min-width: $extra-small-width) {
@@ -12,10 +12,13 @@
     }
   }
 
+  h1 {
+    margin: 0;
+  }
+
   input {
     border: 1px solid $color-light-blue;
     border-radius: 2px;
-    display: block;
     font-size: .9rem;
     height: 4rem;
     margin: .5rem auto;
