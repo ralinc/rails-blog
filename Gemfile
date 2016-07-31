@@ -11,6 +11,7 @@ gem 'bcrypt'
 gem 'haml', '~> 4.1.0.beta.1'
 gem 'simple_form'
 gem 'redcarpet'
+gem 'social-share-button'
 
 group :development, :test do
   gem 'sqlite3'

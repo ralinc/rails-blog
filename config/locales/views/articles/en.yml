@@ -9,3 +9,5 @@ en:
       published: Published
       all: All
       number_of_posts: Number of posts
+  article:
+    social_share_text: Like the article? Share it!

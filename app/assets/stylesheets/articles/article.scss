@@ -5,6 +5,8 @@
   }
 
   article {
+    margin: 0 0 2rem;
+
     .article-note {
       background: $color-pale;
       border-left: 1px solid $color-blue;
@@ -42,6 +44,34 @@
       border-radius: 3px;
       font-size: 90%;
       padding: 1rem;
+    }
+  }
+
+  .article-social-share {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .article-social-share-text {
+    font-family: verdana;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 1rem;
+  }
+
+  .social-share-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .ssb-icon {
+      $icon-size: 2rem;
+      background-size: $icon-size;
+      height: $icon-size;
+      margin: .375rem;
+      width: $icon-size;
     }
   }
 

@@ -26,9 +26,9 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 ## Features and Technical Details
 
 - Markdown blog using [Redcarpet](https://github.com/vmg/redcarpet)
-- Simple authentication (no gems)
-- Restricted access to blog management
 - Static pages
+- Password authentication
+- Restricted access to blog management
 - Use of gravatar images
-- Blog posts with friendly URLs
-- ActiveRecord enums with [simple_form](https://github.com/plataformatec/simple_form)
+- Blog post friendly URL
+- Social share buttons with [social-share-button](https://github.com/huacnlee/social-share-button)
