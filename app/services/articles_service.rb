@@ -1,9 +1,10 @@
 module ArticlesService
   def articles(show = nil)
-    if show == 'all'
+    case show
+    when 'all'
       Article.all
-    elsif show
-      Article.where status: Article.statuses[show.to_sym]
+    when 'wip'
+      Article.wip
     else
       Article.published
     end
