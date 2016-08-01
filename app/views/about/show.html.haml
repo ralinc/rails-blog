@@ -3,7 +3,7 @@
 %h1= t('.title')
 %p= t('.overview')
 
-.layout-features
+.features
   - t('.layout-features').each do |feature|
     .feature
       .feature-image
@@ -13,8 +13,9 @@
         %p= feature[:text]
 
 %h2= t('.contact')
-.layout-social
-  = link_to icon('github-square', class: 'social-link'), 'https://github.com/ralinc', target: '_blank'
-  = link_to icon('linkedin-square', class: 'social-link'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
-  = link_to icon('facebook-official', class: 'social-link'), 'https://facebook.com/ralin.chimev', target: '_blank'
-  = link_to icon('envelope', class: 'social-link'), 'mailto:ralin.chimev@gmail.com'
+.social
+  = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
+  = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
+  = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
+  = link_to icon('google-plus'), 'https://plus.google.com/+RalinChimev', target: '_blank'
+  = link_to icon('envelope-o'), 'mailto:ralin.chimev@gmail.com'

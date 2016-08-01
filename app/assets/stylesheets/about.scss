@@ -1,7 +1,7 @@
 @import 'about/feature';
-@import 'about/social_link';
+@import 'about/social';
 
-.layout-features {
+.features {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,4 @@
   @media (min-width: $small-width) {
     flex-direction: row;
   }
-}
-
-.layout-social {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 }
