@@ -46,7 +46,6 @@ feature 'Listing articles', js: false do
     visit articles_path
 
     expect(page).to have_css('a', text: 'WIP')
-    expect(page).to have_css('a', text: 'PUBLISHED')
     expect(page).to have_css('a', text: 'ALL')
   end
 
@@ -54,7 +53,6 @@ feature 'Listing articles', js: false do
     visit articles_path
 
     expect(page).not_to have_css('a', text: 'WIP')
-    expect(page).not_to have_css('a', text: 'PUBLISHED')
     expect(page).not_to have_css('a', text: 'ALL')
   end
 
