@@ -25,15 +25,18 @@
     }
 
     pre, code {
-      background-color: $color-light-grey;
-      border-radius: 3px;
       font-family: 'Inconsolata';
-      font-size: 90%;
       overflow: auto;
-      padding: 1rem;
       white-space: pre;
       word-break: normal;
       word-wrap: normal;
+    }
+
+    pre {
+      background-color: $color-light-grey;
+      border-radius: 3px;
+      font-size: 90%;
+      padding: 1rem;
     }
 
     .note {
