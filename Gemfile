@@ -13,6 +13,7 @@ gem 'simple_form'
 gem 'redcarpet'
 gem 'social-share-button'
 gem 'puma'
+gem 'config'
 
 group :development, :test do
   gem 'sqlite3'

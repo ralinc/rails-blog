@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  force_ssl if: :ssl?
+  force_ssl if: :ssl_configured?, host: Settings.production_hostname
 
   def new
   end
