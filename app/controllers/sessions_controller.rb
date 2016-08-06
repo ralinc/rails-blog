@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   force_ssl if: :ssl_configured?, host: Settings.production_hostname
 
   def new
+    redirect_to articles_path if authenticated?
   end
 
   def create
@@ -14,6 +15,6 @@ class SessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to root_path
+    redirect_to articles_path
   end
 end
