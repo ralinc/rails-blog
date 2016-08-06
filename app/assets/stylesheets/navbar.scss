@@ -4,7 +4,7 @@
   padding: 1.5rem 0;
   text-transform: uppercase;
 
-  .navbar-layout {
+  .layout-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     }
   }
 
-  .navbar-brand {
+  .brand {
     display: none;
     flex: 1;
     margin: 1rem;
@@ -28,9 +28,7 @@
       display: block;
     }
 
-    span {
-      font-weight: 700;
-    }
+    span {  font-weight: 700; }
   }
 
   a {
@@ -44,10 +42,7 @@
       transition: all .4s ease-in-out;
     }
 
-    &:hover,
-    &:link,
-    &:active,
-    &:visited {
+    &:hover, &:link, &:active, &:visited {
       outline: 0;
       text-decoration: none;
     }

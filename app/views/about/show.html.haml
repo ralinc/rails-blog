@@ -1,21 +1,16 @@
 - provide :title, t('.title')
 
-%h1= t('.title')
-%p= t('.overview')
+.about
+  %h1= t('.title')
+  %p= t('.overview')
 
-.features
-  - t('.layout-features').each do |feature|
-    .feature
-      .feature-image
-        %span{class: "fa fa-#{feature[:icon]}", "aria-hidden" => "true"}
-      .feature-text
-        %h2= feature[:title]
-        %p= feature[:text]
+  %ul.features
+    = render partial: 'feature', collection: t('.features'), as: :feature
 
-%h2= t('.contact')
-.social
-  = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
-  = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
-  = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
-  = link_to icon('google-plus'), 'https://plus.google.com/+RalinChimev', target: '_blank'
-  = link_to icon('envelope-o'), 'mailto:ralin.chimev@gmail.com'
+  %h2= t('.contact')
+  .social
+    = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
+    = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
+    = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
+    = link_to icon('google-plus'), 'https://plus.google.com/+RalinChimev', target: '_blank'
+    = link_to icon('envelope-o'), 'mailto:ralin.chimev@gmail.com'

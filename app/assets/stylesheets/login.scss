@@ -1,10 +1,10 @@
-.login-form {
-  margin: 3rem 0 6rem;
+.login {
+  margin: 2rem 0 4rem;
 
-  .login-form-panel {
+  .panel {
     border: 1px solid $color-silver;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 5rem 1.5rem;
     width: 100%;
 
     @media (min-width: $extra-small-width) {
@@ -12,16 +12,14 @@
     }
   }
 
-  h1 {
-    margin: 0;
-  }
+  h1 { margin: 0; }
 
   input {
     border: 1px solid $color-light-blue;
     border-radius: 2px;
     font-size: .9rem;
     height: 4rem;
-    margin: .5rem auto;
+    margin: .25rem auto;
     padding: .375rem .75rem;
     width: 100%;
   }

@@ -6,22 +6,19 @@
   height: 100vh;
   width: 100%;
 
-  .home-wrap {
+  .panel {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     height: 50vh;
     justify-content: center;
 
-    h1,
-    p {
+    h1, p {
       align-self: center;
       margin: 0;
       text-align: center;
     }
 
-    p {
-      color: $color-red;
-    }
+    p { color: $color-red; }
   }
 }

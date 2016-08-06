@@ -1,2 +1,30 @@
-@import 'articles/article_list';
-@import 'articles/article';
+.articles {
+  header {
+    text-align: center;
+
+    h1 { margin-top: 0; }
+
+    img {
+      border: 1px solid $color-grey;
+      border-radius: 50%;
+      box-shadow: 0 5px 5px -3px $color-grey;
+    }
+  }
+
+  .total {
+    border-top: 1px solid $color-grey;
+    color: $color-grey;
+    font-size: .75rem;
+    margin-bottom: 3rem;
+    padding: .1rem 0 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li { margin: 2rem 0; }
+    li h2, p { margin: 0; }
+    li time { color: $color-grey; }
+  }
+}

@@ -1,6 +1,0 @@
-.article
-  %h1= @article.title
-  %article~ markdown @article.content
-  .article-social-share
-    .article-social-share-text= t('article.social_share_text')
-    = social_share_button_tag(@article.title)

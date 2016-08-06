@@ -1,7 +1,7 @@
 - provide :title, 'Login'
 
-.login-form
-  .login-form-panel
+.login
+  .panel
     %h1= 'Login'
     = form_for(:session, url: login_path) do |f|
       = f.email_field :email, placeholder: 'Email'

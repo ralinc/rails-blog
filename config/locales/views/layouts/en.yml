@@ -4,7 +4,7 @@ en:
     home: "Home"
     about: "About"
     blog: "Blog"
-    login: "Login"
+    admin: "Admin"
     logout: "Logout"
   footer:
     text: "My e-home is built with open source software like Ruby on Rails and PostgreSQL. It runs on Apache under Linux. Its source code is open at: <a href=\"https://github.com/ralinc/ralin.net\" target=\"_blank\">ralinc/ralin.net</a>"

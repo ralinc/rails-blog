@@ -1,5 +1,15 @@
 - provide :title, @article.title
 
 .article
-  = render partial: 'article_header'
-  = render partial: 'article_body' 
+  %header
+    = link_to 'BACK', articles_path
+    - if authenticated?
+      = link_to 'EDIT', edit_article_path(@article)
+      = link_to 'DELETE', @article, method: :delete
+
+  %article
+    %h1= @article.title
+    ~ markdown @article.content
+    %footer
+      %p= t('article.social_share_text')
+      = social_share_button_tag(@article.title)

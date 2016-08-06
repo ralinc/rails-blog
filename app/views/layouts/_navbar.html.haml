@@ -1,10 +1,11 @@
 %nav.navbar
-  .layout-container.navbar-layout
-    .navbar-brand
+  .layout-container
+    .brand
       %span.fa.fa-beer
       = t('brand')
     = link_to t('nav.home'), root_path
     = link_to t('nav.about'), about_path
     = link_to t('nav.blog'), articles_path
+    = link_to t('nav.admin'), login_path
     - if authenticated?
       = link_to t('nav.logout'), logout_path, method: :delete
