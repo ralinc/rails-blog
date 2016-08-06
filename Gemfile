@@ -12,14 +12,23 @@ gem 'haml', '~> 4.1.0.beta.1'
 gem 'simple_form'
 gem 'redcarpet'
 gem 'social-share-button'
+gem 'puma'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 group :production do

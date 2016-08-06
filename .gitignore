@@ -19,3 +19,4 @@ log/*
 .env
 db/*.sqlite3
 .byebug_history
+examples.txt

@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   def create
     success, @article = ArticlesService.create_article article_params
     if success
-      redirect_to articles_path
+      redirect_to @article
     else
       render :new
     end
