@@ -7,6 +7,10 @@
   article {
     margin: 0 0 2rem;
 
+    ul {
+      list-style-type: initial;
+    }
+
     blockquote {
       background: $color-light-grey;
       border-left: .2rem solid $color-blue;

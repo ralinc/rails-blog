@@ -28,6 +28,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'rubocop'
   gem 'haml_lint'
+  gem 'compass'
 end
 
 group :test do
