@@ -6,7 +6,7 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 
 - copy and use any snippet you like
 - follow my approach to any problem you face
-- clone the entire application and change content/styles to your likes
+- fork the repo and use it for your own personal blog
 
 ## How to help?
 
@@ -26,7 +26,8 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 ## Features and Technical Details
 
 - Markdown blog using [Redcarpet](https://github.com/vmg/redcarpet)
-- Static pages
+- Acceptance tests with RSpec and Capybara
+- Home and About static pages
 - Password authentication
 - Restricted access to blog management
 - Use of gravatar images
