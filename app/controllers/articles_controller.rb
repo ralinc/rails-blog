@@ -1,14 +1,14 @@
 class ArticlesController < ApplicationController
-  before_action :force_login, except: [:index, :show]
+  before_action :force_authentication, except: [:index, :show]
   before_action :article, only: [:show, :edit]
 
   def index
-    force_login if params[:show]
+    force_authentication if params[:show]
     @articles = ArticlesService.articles params[:show]
   end
 
   def show
-    force_login if article.status != 'published'
+    force_authentication if article.status != 'published'
   end
 
   def new

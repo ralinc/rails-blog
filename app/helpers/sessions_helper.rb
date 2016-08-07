@@ -2,13 +2,13 @@ module SessionsHelper
   def authenticate
     email = params[:session][:email]
     password = params[:session][:password]
-    user = Authenticator.login(email, password)
-    session[:user_id] = user.id if user
+    user = User.find_by(email: email.downcase)
+    return unless user && user.authenticate(password)
+    session[:user_id] = user.id
   end
 
-  def force_login
+  def force_authentication
     return if authenticated?
-
     redirect_to login_url
   end
 
