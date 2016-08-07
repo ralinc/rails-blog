@@ -1,4 +1,8 @@
 module SessionHelper
+  def sign_in(user)
+    session[:user_id] = user.id
+  end
+
   def login
     user = create(:user)
     visit login_path
