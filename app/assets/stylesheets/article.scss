@@ -2,6 +2,17 @@
   header {
     border-bottom: 1px solid $color-blue;
     margin-bottom: 2rem;
+    min-height: 1.5rem;
+
+    a {
+      float: left;
+      margin-right: .5rem;
+    }
+
+    a:nth-child(3) {
+      float: right;
+      margin-right: 0;
+    }
   }
 
   article {

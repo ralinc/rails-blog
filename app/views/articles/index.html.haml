@@ -4,14 +4,12 @@
   %header
     = image_tag gravatar_url("ralin.chimev@gmail.com", 80), alt: t('brand')
     %h1= t('articles.header.title')
-
-  - if authenticated?
-    = link_to t('articles.header.new').upcase, new_article_path
-    = link_to t('articles.header.wip').upcase, articles_path(show: 'wip')
-    = link_to t('articles.header.all').upcase, articles_path(show: 'all')
-
-  .total
-    = "#{t('articles.header.number_of_posts').upcase}: #{@articles.size}"
-
+    - if authenticated?
+      .actions
+        = link_to t('articles.header.new').upcase, new_article_path
+        = link_to t('articles.header.wip').upcase, articles_path(show: 'wip')
+        = link_to t('articles.header.all').upcase, articles_path(show: 'all')
+    .total
+      = "#{t('articles.header.number_of_posts').upcase}: #{@articles.size}"
   %ul
     = render @articles
