@@ -16,7 +16,6 @@ feature 'Visiting about page', js: false do
     expect(page).to have_css('a[href="https://github.com/ralinc"]')
     expect(page).to have_css('a[href="https://www.linkedin.com/in/ralinchimev"]')
     expect(page).to have_css('a[href="https://facebook.com/ralin.chimev"]')
-    expect(page).to have_css('a[href="https://plus.google.com/+RalinChimev"]')
-    expect(page).to have_css('a[href="mailto:ralin.chimev@gmail.com"]')
+    expect(page).to have_css('a[href="mailto:me@ralin.net"]')
   end
 end

@@ -2,16 +2,17 @@ en:
   about:
     show:
       title: About
-      overview: I am a software engineer mostly interested in developing practical web applications and services. I've been writing software since 1998. As of late I use mainly Ruby and JavaScript to build stuff. Still I am open to any technology that is proved suitable for the particular business need. In my spare time I contribute to open source projects as I believe that open source is the right way to build world-class applications. I am obsessed with writing simple code that is easy to read and understand. I do not always succeed in crafting clean code but I've never stopped trying and improving.
+      overview: I am a software engineer mostly interested in developing practical web applications and services. I have been creating software since 1999. As of late I use mainly Ruby and JavaScript to build stuff. I am open to any technology that is proved suitable for a particular business need. In my spare time I contribute to open source projects as I believe that open source is the right way to build world-class applications. I am obsessed with writing simple code that is easy to read and understand. I do not always succeed in crafting clean code but I have never stopped trying and improving.
+      blog-overview: You can understand a lot about me as a programmer by going through my blog articles. They mostly elaborate on technical approaches that are proven to work for teams at large scale. As you may get away with any approach when working alone on a small application. But when projects and teams get bigger  things get messy quite quickly. I am trying to be as objective as possible as I've being through a lot in the past almost %{years} years. Still the reader can sense an opinionated positions on controversial topics. They simply show the path I have chosen to follow.
       features: [{
-              icon: "code",
-              title: "Apps",
-              text: "I love creating clean web and mobile applications. I am passionate about smart designs that improve the user experience and are easy to work with. Everyone is happy when software simply works. Everyone is happy when they can get things done easily. My goal is to make users happy by crafting robust and intuitive sowftware. I do not like fancy stuff, rabbits popping out of hats and heavy animations. Software should be clean and simple. My approach to building applications is: start small, go live with MVP (minimum viable product) and then elaborate on that with most important features first one at a time. That way the product is user validated from day one.",
-              link: "https://github.com/ralinc"
-            }, {
-              icon: "pencil",
-              title: "Blog",
-              text: "My blog is mostly technical. You can find writings on using open source frameworks and tools, creating web applications, good practices, bad practices, clean code, anti-patterns, refactoring, TDD, BDD. It mostly reflects on approaches that are proven to work at large scale. As you may get away with any approach when working alone on a small application but when projects and teams get bigger then things get messy quite quickly. I am trying to be as objective as possible as I've being through a lot in the past almost 20 years. Still the reader can sense an opinionated positions on controversial topics. They simply show the path I have chosen to follow.",
-              link: "/blog"
-            }]
+          icon: "code",
+          title: "Apps",
+          text: "I love creating solid web applications and services. I am passionate about smart designs that improve the user experience and are intuitive to work with. Things should be clean and simple. Things should not be too fancy and over-engineered.",
+          link: "https://github.com/ralinc"
+        }, {
+          icon: "pencil",
+          title: "Blog",
+          text: "My blog is mostly technical and reflects on my daily work. You can find writings on using open source frameworks and tools, creating web applications and services, good practices, bad practices, clean code, anti-patterns, refactoring, TDD, BDD. ",
+          link: "/blog"
+        }]
       contact: Get in touch
