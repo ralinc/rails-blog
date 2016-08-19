@@ -1,7 +1,6 @@
 - provide :title, @article.title
 
 .article
-  = javascript_include_tag 'fb'
   %header
     = link_to 'BACK', articles_path
     - if authenticated?
@@ -13,5 +12,4 @@
     ~ markdown @article.content
     %footer
       = render partial: 'facebook_like'
-      %span= ' <= like || share => '
       = social_share_button_tag(@article.title)
