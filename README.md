@@ -23,13 +23,14 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 - Storage: PostgreSQL
 - Deployment: OpenShift
 
-## Features and Technical Details
+## Features 
 
 - Markdown blog using [Redcarpet](https://github.com/vmg/redcarpet)
-- Acceptance tests with RSpec and Capybara
-- Home and About static pages
+- Single admin user
 - Password authentication
-- Restricted access to blog management
+- Protected access to admin area
+- WiP (private) and published (visible) blog posts
 - Use of gravatar images
 - Blog post friendly URL
 - Social share buttons with [social-share-button](https://github.com/huacnlee/social-share-button)
+- Google analytics with [Turbolinks](https://github.com/turbolinks/turbolinks)
