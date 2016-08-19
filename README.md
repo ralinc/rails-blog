@@ -32,5 +32,6 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 - WiP (private) and published (visible) blog posts
 - Use of gravatar images
 - Blog post friendly URL
+- Facebook like button
 - Social share buttons with [social-share-button](https://github.com/huacnlee/social-share-button)
 - Google analytics with [Turbolinks](https://github.com/turbolinks/turbolinks)
