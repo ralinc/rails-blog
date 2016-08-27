@@ -8,5 +8,3 @@
     = link_to t('nav.blog'), articles_path
     - if authenticated?
       = link_to t('nav.logout'), logout_path, method: :delete
-    - else
-      = link_to t('nav.admin'), login_path
