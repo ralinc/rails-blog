@@ -20,7 +20,7 @@ log/*
 db/*.sqlite3
 .byebug_history
 examples.txt
-
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+.keep

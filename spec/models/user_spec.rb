@@ -1,53 +1,53 @@
 require 'rails_helper'
 
 describe User do
-  it 'email should be saved as lowercased' do
+  it 'email is saved as lowercased' do
     mixed_case_email = 'Foo@ExAMPle.CoM'
     user = create :user, email: mixed_case_email
     expect(user.email).to eq(mixed_case_email.downcase)
   end
 
   describe 'validations' do
-    it 'should be valid' do
+    it 'is valid' do
       user = build :user
       expect(user).to be_valid
     end
 
     describe 'name' do
-      it 'should be present' do
+      it 'is present' do
         user = build :user, name: ''
         expect(user).not_to be_valid
       end
 
-      it 'should not be too short' do
+      it 'is not too short' do
         user = build :user, name: 'a' * 2
         expect(user).not_to be_valid
       end
 
-      it 'should not be too long' do
+      it 'is not too long' do
         user = build :user, name: 'a' * 101
         expect(user).not_to be_valid
       end
     end
 
     describe 'email' do
-      it 'should be present' do
+      it 'is present' do
         user = build :user, email: ''
         expect(user).not_to be_valid
       end
 
-      it 'should not be too long' do
+      it 'is not too long' do
         user = build :user, email: 'a' * 250 + '@example.com'
         expect(user).not_to be_valid
       end
 
-      it 'should be unique' do
+      it 'is unique' do
         existing_user = create :user
         new_user = build :user, email: existing_user.email
         expect(new_user).not_to be_valid
       end
 
-      it 'should accept valid addresses' do
+      it 'accepts valid addresses' do
         %w(
           user@example.com
           USER@foo.COM
@@ -60,7 +60,7 @@ describe User do
         end
       end
 
-      it 'should reject invalid addresses' do
+      it 'rejects invalid addresses' do
         %w(
           user@example,com
           user_at_foo.org
@@ -75,17 +75,17 @@ describe User do
     end
 
     describe 'password' do
-      it 'should be present' do
+      it 'is present' do
         user = build :user, password_confirmation: ''
         expect(user).not_to be_valid
       end
 
-      it 'should not be too short' do
+      it 'is not too short' do
         user = build :user, password_confirmation: 'a' * 5
         expect(user).not_to be_valid
       end
 
-      it 'should not be too long' do
+      it 'is not too long' do
         user = build :user, password_confirmation: 'a' * 50
         expect(user).not_to be_valid
       end
