@@ -4,7 +4,7 @@
   .panel {
     border: 1px solid $color-silver;
     margin: 0 auto;
-    padding: 5rem 1.5rem;
+    padding: 4rem 1rem 6rem;
     width: 100%;
 
     @media (min-width: $extra-small-width) {
@@ -12,10 +12,13 @@
     }
   }
 
-  h1 { margin: 0; }
+  h1 {
+    margin: 0;
+    letter-spacing: .1rem;
+  }
 
   input {
-    border: 1px solid $color-light-blue;
+    border: 1px solid $color-blue;
     border-radius: 2px;
     font-size: .9rem;
     height: 4rem;
