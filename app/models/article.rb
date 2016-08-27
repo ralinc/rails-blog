@@ -4,11 +4,11 @@ class Article < ActiveRecord::Base
   validates :content, presence: true
   validates :slug, presence: true,
                    uniqueness: true,
-                   format: { with: /\A[0-9a-z-]+\z/ }
+                   format: { with: /\A[a-z-]+\z/ }
 
   enum status: [:wip, :published]
 
   def to_param
-    "#{id}-#{slug}"
+    slug_changed? ? slug_was : slug
   end
 end

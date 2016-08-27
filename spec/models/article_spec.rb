@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 describe Article do
-  it 'to_param should return id-slug' do
+  it 'to_param should return slug' do
     article = create :article
-    expect(article.to_param).to eq("#{article.id}-#{article.slug}")
+    expect(article.to_param).to eq article.slug
   end
 
   it 'order should be most recent first' do
@@ -41,14 +41,14 @@ describe Article do
       end
 
       it 'should accept valid formats' do
-        %w(a aaa a-a aaa-aaa aaa-aaa-aaa 1 111 aaa111 aaa-111).each do |slug|
+        %w(a aaa a-a aaa-aaa aaa-aaa-aaa).each do |slug|
           article = build :article, slug: slug
           expect(article).to be_valid
         end
       end
 
       it 'should reject invalid formats' do
-        %w(A Aaa a\ a aaa"aaa aaa'aaa 1\ 2 ABC111 aaa?111 aaa!111 aaa.111).each do |slug|
+        %w(A Aaa a\ a aa"aa aa'aa 1 123 abc-123 1\ 2 aa?11 aa!11 aa.11).each do |slug|
           article = build :article, slug: slug
           expect(article).not_to be_valid
         end

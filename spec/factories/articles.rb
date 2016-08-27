@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :article do
     title 'title'
-    sequence(:slug) { |n| "slug-#{n}" }
+    sequence(:slug) { |_n| "slug-#{(0...10).map { ('a'..'z').to_a[rand(26)] }.join}" }
     content 'content'
     status Article.statuses[:published]
 

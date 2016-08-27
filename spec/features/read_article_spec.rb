@@ -13,7 +13,7 @@ feature 'Reading article', js: false do
   scenario 'renders markdown content' do
     article = create :article, content: '*markdown*'
 
-    visit article_path(article.id)
+    visit article_path(article)
 
     expect(page).to have_css('em', text: 'markdown')
   end
@@ -21,7 +21,7 @@ feature 'Reading article', js: false do
   scenario 'forces login when viewing unpublished article' do
     article = create :wip_article
 
-    visit article_path(article.id)
+    visit article_path(article)
 
     expect_login_page page
   end
