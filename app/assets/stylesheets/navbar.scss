@@ -19,7 +19,7 @@
     }
   }
 
-  .brand {
+  span {
     display: none;
     flex: 1;
     margin: 1rem;
@@ -27,8 +27,6 @@
     @media (min-width: $extra-small-width) {
       display: block;
     }
-
-    span {  font-weight: 700; }
   }
 
   a {
