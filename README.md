@@ -1,4 +1,6 @@
 # Ruby on Rails Markdown Blog
+[![Code Climate](https://codeclimate.com/github/ralinc/ralin.net/badges/gpa.svg)](https://codeclimate.com/github/ralinc/ralin.net)
+[![Test Coverage](https://codeclimate.com/github/ralinc/ralin.net/badges/coverage.svg)](https://codeclimate.com/github/ralinc/ralin.net/coverage)
 
 This is the source code repository for my digital space [www.ralin.net](http://www.ralin.net/). The website contains some information about me, social links and my blog. It is built using open source software and tools like Ruby on Rails, Sass, jQuery, CoffeeScript, PostgreSQL and Vim. It is deployed on [OpenShift](https://www.openshift.com/), the PaaS by Red Hat, running on Passenger inside Apache. Its source code is completely open and any part of it can be used for any purpose.
 
