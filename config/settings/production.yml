@@ -1,1 +1,2 @@
-production_hostname: website-ralin.rhcloud.com
+https_host: website-ralin.rhcloud.com
+ssl: true

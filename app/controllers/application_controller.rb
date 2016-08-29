@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  def ssl_configured?
-    Rails.env.production?
+  def ssl?
+    Settings.ssl
   end
 end

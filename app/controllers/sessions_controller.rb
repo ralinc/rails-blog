@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  force_ssl if: :ssl_configured?, host: Settings.production_hostname
+  force_ssl if: :ssl?, host: Settings.https_host
 
   def new
     redirect_to articles_path if authenticated?
