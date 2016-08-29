@@ -3,7 +3,7 @@
   var disqus_config = function () {
     this.page.url = "#{request.original_url}"
     this.page.identifier = "#{@article.id}"
-    this.page.title = "#{@article.title}"
+    this.page.title = "#{sanitize(@article.title)}"
   };
 
   (function() { // DON'T EDIT BELOW THIS LINE
