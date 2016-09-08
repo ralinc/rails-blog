@@ -21,8 +21,22 @@
 
   span {
     display: none;
+    border-bottom: 1px solid transparent;
+
+    @media (min-width: $extra-small-width) {
+      display: block;
+    }
+  }
+
+  .brand {
+    display: none;
     flex: 1;
-    margin: 1rem;
+    margin-left: .1rem;
+
+    &:hover {
+      border-color: transparent;
+      transition-property: none;
+    }
 
     @media (min-width: $extra-small-width) {
       display: block;
