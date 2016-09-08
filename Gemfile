@@ -30,7 +30,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'codeclimate-test-reporter'
 end
 
 group :production do
