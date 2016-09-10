@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'home#show'
 
   resources :articles
+  resources :tags, only: [:show]
 
   get 'about', to: 'about#show'
   get 'login', to: 'sessions#new'

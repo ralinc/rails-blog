@@ -10,11 +10,16 @@
       box-shadow: 0 5px 5px -3px $color-grey;
     }
 
-    .actions { text-align: left; }
-    .actions a { margin-right: .5rem; }
+    .actions {
+      border-bottom: 1px solid $color-grey;
+      text-align: left;
+
+      a {
+        margin-right: .5rem;
+      }
+    }
 
     .total {
-      border-top: 1px solid $color-grey;
       color: $color-grey;
       font-size: .75rem;
       margin-bottom: 3rem;

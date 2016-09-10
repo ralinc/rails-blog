@@ -1,0 +1,9 @@
+- provide :title, t('articles.index.title')
+
+.articles
+  %header
+    %h1= @tag.name
+    .actions
+      = link_to 'BACK', referer_path
+  %ul
+    = render @tag.articles.published
