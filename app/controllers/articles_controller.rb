@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
   def index
     force_authentication if params[:show]
-    @articles = ArticlesService.articles params[:show]
+    @articles = ArticlesService.filter params[:show]
   end
 
   def show
@@ -16,8 +16,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    success, @article = ArticlesService.create_article article_params
-    if success
+    @article = Article.new article_params
+    if @article.save
       redirect_to @article
     else
       render :new
@@ -43,7 +43,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :slug, :status, :content)
+    params.require(:article).permit(:title, :slug, :tags_string, :status, :content)
   end
 
   def article

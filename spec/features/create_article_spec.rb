@@ -7,6 +7,7 @@ feature 'Creating article', js: false do
 
     fill_in 'Title', with: 'title'
     fill_in 'Slug', with: 'slug'
+    fill_in 'Tags', with: 'tag1, tag2'
     fill_in 'Content', with: 'content'
     select 'published', from: 'Status'
     click_on 'Save'
