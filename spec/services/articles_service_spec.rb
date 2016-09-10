@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe ArticlesService do
+describe ArticlesFilter do
   describe 'filters articles' do
     before do
       create_list :article, 2
@@ -8,17 +8,17 @@ describe ArticlesService do
     end
 
     it 'all' do
-      articles = ArticlesService.filter 'all'
+      articles = ArticlesFilter.apply 'all'
       expect(articles).to eq(Article.all)
     end
 
     it 'wip' do
-      wip_articles = ArticlesService.filter 'wip'
+      wip_articles = ArticlesFilter.apply 'wip'
       expect(wip_articles).to eq(Article.wip)
     end
 
     it 'published' do
-      expect(ArticlesService.filter).to eq(Article.published)
+      expect(ArticlesFilter.apply).to eq(Article.published)
     end
   end
 end

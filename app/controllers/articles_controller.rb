@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
   def index
     force_authentication if params[:show]
-    @articles = ArticlesService.filter params[:show]
+    @articles = ArticlesFilter.apply params[:show]
   end
 
   def show
