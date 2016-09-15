@@ -52,7 +52,6 @@ class ArticlesController < ApplicationController
   end
 
   def force_authentication
-    return if authenticated?
-    redirect_to login_url
+    redirect_to login_url unless authenticated?
   end
 end
