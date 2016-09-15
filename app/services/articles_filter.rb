@@ -1,5 +1,5 @@
 module ArticlesFilter
-  def self.apply(filter = nil)
+  def self.filter_by_status(filter = nil)
     case filter
     when 'all'
       Article.all

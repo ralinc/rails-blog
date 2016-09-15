@@ -1,58 +1,46 @@
 require 'rails_helper'
 
 describe Article do
-  it 'to_param returns slug' do
-    article = create :article
-    expect(article.to_param).to eq article.slug
-  end
-
   it 'order is most recent first' do
     create_list :article, 2
     create :article, title: 'most recent'
     expect(Article.first.title).to eq('most recent')
   end
 
+  it 'id parameter is slug' do
+    article = create :article
+    expect(article.to_param).to eq article.slug
+  end
+
+  it 'creates tags from comma-separated string' do
+    article = build :article, tags_string: 'abc, 123, xyz'
+    expect(article.tags.map(&:name)).to eq %w(abc 123 xyz)
+  end
+
+  it 'returns tags as comma-separated string' do
+    tag_abc = build :tag, name: 'abc'
+    tag_xyz = build :tag, name: 'xyz'
+    article = build :article, tags: [tag_abc, tag_xyz]
+    expect(article.tags_string).to eq 'abc, xyz'
+  end
+
+  describe 'associations' do
+    it { should have_many(:taggings) }
+    it { should have_many(:tags).through(:taggings) }
+  end
+
   describe 'validations' do
-    it 'is valid' do
-      article = build :article
-      expect(article).to be_valid
+    it { should validate_presence_of(:title) }
+    it { should validate_presence_of(:content) }
+    it { should validate_presence_of(:slug) }
+    it { should validate_uniqueness_of(:slug).case_insensitive }
+
+    %w(a aaa a-a aaa-aaa aaa-aaa-aaa).each do |slug|
+      it { should allow_value(slug).for(:slug) }
     end
 
-    it 'requires title' do
-      article = build :article, title: ''
-      expect(article).not_to be_valid
-    end
-
-    it 'requires content' do
-      article = build :article, content: ''
-      expect(article).not_to be_valid
-    end
-
-    describe 'slug' do
-      it 'is present' do
-        article = build :article, slug: ''
-        expect(article).not_to be_valid
-      end
-
-      it 'is unique' do
-        existing_article = create :article
-        new_article = build :article, slug: existing_article.slug
-        expect(new_article).not_to be_valid
-      end
-
-      it 'accepts valid formats' do
-        %w(a aaa a-a aaa-aaa aaa-aaa-aaa).each do |slug|
-          article = build :article, slug: slug
-          expect(article).to be_valid
-        end
-      end
-
-      it 'rejects invalid formats' do
-        %w(A Aaa a\ a aa"aa aa'aa 1 123 abc-123 1\ 2 aa?11 aa!11 aa.11).each do |slug|
-          article = build :article, slug: slug
-          expect(article).not_to be_valid
-        end
-      end
+    %w(A Aaa a\ a aa"aa aa'aa 1 123 abc-123 1\ 2 aa?11 aa!11 aa.11).each do |slug|
+      it { should_not allow_value(slug).for(:slug) }
     end
   end
 end

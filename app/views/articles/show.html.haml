@@ -12,7 +12,7 @@
     = render partial: 'tags'
     ~ markdown @article.content
     %footer
-      = render partial: 'facebook_like'
+      -# = render partial: 'facebook_like'
       = social_share_button_tag(@article.title)
 
 = render partial: 'comments'

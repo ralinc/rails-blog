@@ -7,11 +7,6 @@ module SessionsHelper
     session[:user_id] = user.id
   end
 
-  def force_authentication
-    return if authenticated?
-    redirect_to login_url
-  end
-
   def logout
     session.delete(:user_id)
     @current_user = nil

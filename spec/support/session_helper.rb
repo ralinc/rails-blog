@@ -1,5 +1,5 @@
 module SessionHelper
-  def sign_in(user)
+  def create_session_for(user)
     session[:user_id] = user.id
   end
 

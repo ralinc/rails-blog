@@ -9,8 +9,4 @@
     = render partial: 'feature', collection: t('.features'), as: :feature
 
   %h2= t('.contact')
-  .social
-    = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
-    = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
-    = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
-    = link_to icon('envelope-o'), 'mailto:me@ralin.net'
+  = render partial: 'social' 

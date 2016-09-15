@@ -7,8 +7,8 @@
     .actions
       - if authenticated?
         = link_to t('articles.header.new').upcase, new_article_path
-        = link_to t('articles.header.wip').upcase, articles_path(show: 'wip')
-        = link_to t('articles.header.all').upcase, articles_path(show: 'all')
+        = link_to t('articles.header.wip').upcase, articles_path(status: 'wip')
+        = link_to t('articles.header.all').upcase, articles_path(status: 'all')
     .total
       = "#{t('articles.header.number_of_posts').upcase}: #{@articles.size}"
   %ul

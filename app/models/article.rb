@@ -7,7 +7,7 @@ class Article < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
   validates :slug, presence: true,
-                   uniqueness: true,
+                   uniqueness: { case_sensitive: false },
                    format: { with: /\A[a-z-]+\z/ }
 
   enum status: [:wip, :published]

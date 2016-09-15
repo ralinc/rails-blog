@@ -1,10 +1,10 @@
 class ArticlesController < ApplicationController
   before_action :force_authentication, except: [:index, :show]
-  before_action :article, only: [:show, :edit]
 
   def index
-    force_authentication if params[:show]
-    @articles = ArticlesFilter.apply params[:show]
+    status = params[:status]
+    force_authentication if status
+    @articles = ArticlesFilter.filter_by_status status
   end
 
   def show
@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    article
   end
 
   def update
@@ -48,5 +49,10 @@ class ArticlesController < ApplicationController
 
   def article
     @article ||= Article.find_by slug: params[:id]
+  end
+
+  def force_authentication
+    return if authenticated?
+    redirect_to login_url
   end
 end
