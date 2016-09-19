@@ -28,7 +28,7 @@
     }
 
     p {
-      margin: 2rem 0;
+      margin: 1rem 0;
     }
 
     blockquote {
@@ -45,6 +45,10 @@
         line-height: .1em;
         margin-right: .25em;
         vertical-align: -.5em;
+      }
+
+      p {
+        margin: 0;
       }
     }
 
