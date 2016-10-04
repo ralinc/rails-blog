@@ -32,10 +32,10 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 - Password authentication
 - Protected access to admin area
 - Embedding gravatar images
-- WiP (admin-only-visible) and published blog posts
+- WiP (admin only visible) and published blog posts
 - Blog post friendly URL (slug)
-- Facebook 'Like' button with likes count
+- Facebook 'Like' button on blog posts
 - Social share buttons via [social-share-button](https://github.com/huacnlee/social-share-button)
 - Blog post comments via [Disqus](https://disqus.com/)
-- Google analytics working with [Turbolinks 5](https://github.com/turbolinks/turbolinks)
+- Google Analytics working with [Turbolinks 5](https://github.com/turbolinks/turbolinks)
 - Blog posts tagging
