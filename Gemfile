@@ -31,7 +31,7 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'shoulda-matchers', require: false
+  gem 'shoulda-matchers'
   gem 'codeclimate-test-reporter'
 end
 
