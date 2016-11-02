@@ -3,3 +3,6 @@ Documentation:
 
 Metrics/LineLength:
   Max: 100
+
+Style/MutableConstant:
+  Enabled: false
