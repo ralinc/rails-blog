@@ -50,8 +50,4 @@ class ArticlesController < ApplicationController
   def article
     @article ||= Article.find_by slug: params[:id]
   end
-
-  def force_authentication
-    redirect_to login_url unless authenticated?
-  end
 end

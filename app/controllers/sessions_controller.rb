@@ -2,12 +2,11 @@ class SessionsController < ApplicationController
   force_ssl if: :ssl?, host: Settings.https_host
 
   def new
-    redirect_to articles_path if authenticated?
   end
 
   def create
     if authenticated? || authenticate
-      redirect_to articles_path
+      redirect_back
     else
       render :new
     end
@@ -15,6 +14,6 @@ class SessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to articles_path
+    redirect_to root_url
   end
 end
