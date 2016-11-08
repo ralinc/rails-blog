@@ -33,6 +33,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
+  gem 'simplecov'
   gem 'codeclimate-test-reporter'
 end
 
