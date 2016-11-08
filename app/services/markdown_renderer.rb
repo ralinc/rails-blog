@@ -8,4 +8,8 @@ class MarkdownRenderer < Redcarpet::Render::HTML
       "<p>#{text}</p>"
     end
   end
+
+  def block_code(code, language)
+    CodeRay.scan(code, language).div
+  end
 end

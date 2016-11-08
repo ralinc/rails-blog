@@ -10,10 +10,11 @@ gem 'turbolinks'
 gem 'bcrypt'
 gem 'haml', '~> 4.1.0.beta.1'
 gem 'simple_form'
-gem 'redcarpet'
 gem 'social-share-button'
 gem 'puma'
 gem 'config'
+gem 'redcarpet'
+gem 'coderay'
 
 group :development, :test do
   gem 'sqlite3'

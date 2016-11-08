@@ -3,11 +3,11 @@ module ArticlesHelper
     filter_html: false,
     hard_wrap: true,
     no_styles: true,
+    link_attributes: { rel: 'nofollow', target: '_blank' },
     prettify: true,
     safe_links_only: true,
-    link_attributes: { rel: 'nofollow', target: '_blank' },
     with_toc_data: true
-  }.freeze
+  }
 
   MARKDOWN_EXTENSIONS = {
     autolink: true,
@@ -22,7 +22,7 @@ module ArticlesHelper
     superscript: true,
     tables: true,
     underline: true
-  }.freeze
+  }
 
   def markdown(text)
     renderer = MarkdownRenderer.new(MARKDOWN_OPTIONS)
