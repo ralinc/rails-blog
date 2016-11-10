@@ -31,6 +31,12 @@
       margin: 1rem 0;
     }
 
+    img {
+      width: 75%;
+      margin: 2rem auto;
+      display: block;
+    }
+
     blockquote {
       background: $color-light-grey;
       border-left: .2rem solid $color-blue;
