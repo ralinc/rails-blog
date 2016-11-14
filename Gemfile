@@ -1,42 +1,42 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
-gem 'sass-rails', '~> 5.0'
-gem 'font-awesome-sass', '~> 4.6.2'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'turbolinks'
+ruby '2.0.0'
+
+gem 'autoprefixer-rails'
 gem 'bcrypt'
-gem 'haml', '~> 4.1.0.beta.1'
+gem 'coderay'
+gem 'coffee-rails'
+gem 'config'
+gem 'font-awesome-sass'
+gem 'jquery-rails'
+gem 'haml'
+gem 'pg'
+gem 'puma'
+gem 'rails'
+gem 'redcarpet'
+gem 'sass-rails'
 gem 'simple_form'
 gem 'social-share-button'
-gem 'puma'
-gem 'config'
-gem 'redcarpet'
-gem 'coderay'
+gem 'turbolinks'
+gem 'uglifier'
 
 group :development, :test do
-  gem 'sqlite3'
-  gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 group :test do
   gem 'capybara'
+  gem 'codeclimate-test-reporter'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'simplecov'
-  gem 'codeclimate-test-reporter'
-end
-
-group :production do
-  gem 'pg'
 end
