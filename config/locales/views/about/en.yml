@@ -13,6 +13,6 @@ en:
           icon: "pencil",
           title: "Blog",
           text: "My blog is mostly technical and reflects on my daily work. You can find writings on using open source frameworks and tools, creating web applications and services, good practices, bad practices, clean code, anti-patterns, refactoring, TDD, BDD. ",
-          link: "/blog"
+          link: "/articles"
         }]
       contact: Get in touch
