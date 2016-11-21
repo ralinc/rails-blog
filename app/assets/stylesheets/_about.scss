@@ -1,4 +1,31 @@
 .about {
+  .overview {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $small-width) {
+      align-items: flex-start;
+      flex-direction: row;
+    }
+
+    .image {
+      flex: 1;
+      margin: 1rem 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      flex: 2;
+      @media (min-width: $small-width) {
+        margin: 0 2rem;
+      }
+    }
+  }
+
   .features {
     align-items: flex-start;
     display: flex;
@@ -18,7 +45,6 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
 
     @media (min-width: $extra-small-width) {
       align-items: flex-start;

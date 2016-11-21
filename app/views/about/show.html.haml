@@ -2,11 +2,17 @@
 
 .about
   %h1= t('.title')
-  %p= t('.overview')
-  %p= t('.blog-overview', years: Time.now.year - 1999)
+  %section.overview
+    .image
+      = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
+    .text
+      %p= t('.overview')
+      %p= t('.blog-overview', years: Time.now.year - 1999)
 
-  %ul.features
-    = render partial: 'feature', collection: t('.features'), as: :feature
+  %section
+    %ul.features
+      = render partial: 'feature', collection: t('.features'), as: :feature
 
-  %h2= t('.contact')
-  = render partial: 'social' 
+  %section
+    %h2= t('.contact')
+    = render partial: 'social'
