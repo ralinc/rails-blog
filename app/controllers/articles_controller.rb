@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new article_params
+
     if @article.save
       redirect_to @article
     else
@@ -25,7 +26,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    article
+    load_article
   end
 
   def update
@@ -48,6 +49,7 @@ class ArticlesController < ApplicationController
   end
 
   def article
-    @article ||= Article.find_by slug: params[:id]
+    @article ||= Article.find_by(slug: params[:id]).decorate
   end
+  alias load_article article
 end

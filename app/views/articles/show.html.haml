@@ -10,7 +10,7 @@
   %article
     %h1= @article.title
     = render partial: 'tags'
-    ~ markdown @article.content
+    ~ @article.markdown
     %footer
       -# = render partial: 'facebook_like'
       = social_share_button_tag(@article.title)
