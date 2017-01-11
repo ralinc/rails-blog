@@ -1,93 +1,93 @@
-.about {
-  .overview {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.overview {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $small-width) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .image {
+    flex: 1;
+    margin: 1rem 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text {
+    flex: 3;
 
     @media (min-width: $small-width) {
-      align-items: flex-start;
-      flex-direction: row;
-    }
-
-    .image {
-      flex: 1;
-      margin: 1rem 0;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .text {
-      flex: 2;
-      @media (min-width: $small-width) {
-        margin: 0 2rem;
-      }
+      margin: 0 2rem;
     }
   }
+}
 
-  .features {
+.features {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+
+  @media (min-width: $medium-width) {
+    flex-direction: row;
+  }
+}
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $extra-small-width) {
     align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+    flex-direction: row;
+  }
 
-    @media (min-width: $medium-width) {
-      flex-direction: row;
+  .image {
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin: 1rem 1rem 1rem 0;
+    width: 5rem;
+
+    .fa {
+      align-self: center;
+      color: $color-blue;
+      font-size: 2rem;
     }
   }
 
-  .feature {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-
-    @media (min-width: $extra-small-width) {
-      align-items: flex-start;
-      flex-direction: row;
-    }
-
-    .image {
-      border: 1px solid $color-blue;
-      border-radius: 50%;
-      display: flex;
-      height: 5rem;
-      justify-content: center;
-      margin: 1rem 1rem 1rem 0;
-      width: 5rem;
-
-      .fa {
-        align-self: center;
-        color: $color-blue;
-        font-size: 2rem;
-      }
-    }
-
-    .text { flex: 2; }
-    .text h2 { color: $color-blue; }
+  .text {
+    flex: 2;
   }
+}
 
-  .social {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
-    a {
-      border: 1px solid $color-silver;
-      box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-      margin: .2rem;
+  a {
+    border: 1px solid $color-silver;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, .17);
+    margin: .2rem;
 
-      i {
-        color: $color-blue;
-        font-size: 3em;
-        height: 3rem;
-        margin: .75em;
-        width: 3rem;
-      }
+    i {
+      color: $color-blue;
+      font-size: 3em;
+      height: 3rem;
+      margin: .75em;
+      width: 3rem;
     }
   }
 }
