@@ -7,7 +7,7 @@
       = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
     .text
       %p= t('.overview')
-      %p= t('.blog-overview', years: Time.now.year - 1999)
+      %p= t('.blog-overview', years: Time.current.year - 1999)
 
   %section
     %ul.features

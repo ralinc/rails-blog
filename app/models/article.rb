@@ -1,16 +1,16 @@
 class Article < ActiveRecord::Base
-  default_scope -> { order(created_at: :desc) }
+  default_scope { order(created_at: :desc) }
 
-  has_many :taggings
+  enum status: [:wip, :published]
+
+  has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
 
   validates :title, presence: true
   validates :content, presence: true
   validates :slug, presence: true,
                    uniqueness: { case_sensitive: false },
-                   format: { with: /\A[a-z-]+\z/ }
-
-  enum status: [:wip, :published]
+                   slug: true
 
   def to_param
     slug_changed? ? slug_was : slug
