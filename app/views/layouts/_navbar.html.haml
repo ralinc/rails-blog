@@ -3,7 +3,7 @@
     %span.fa.fa-beer
     = link_to t('brand'), root_path, class: 'brand'
     = link_to t('nav.home'), root_path
-    = link_to t('nav.about'), about_path
+    = link_to t('nav.about'), page_path('about')
     = link_to t('nav.blog'), articles_path
     - if authenticated?
       = link_to t('nav.logout'), logout_path, method: :delete

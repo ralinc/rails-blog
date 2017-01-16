@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'Visiting about page', js: false do
   scenario 'displays about page' do
-    visit about_path
+    visit page_path('about')
 
     expect(page).to have_title('About me - Ralin Chimev')
     expect(page).to have_css('h1', text: 'About')

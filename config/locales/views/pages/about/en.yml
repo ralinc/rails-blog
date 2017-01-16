@@ -1,6 +1,6 @@
 en:
-  about:
-    show:
+  pages:
+    about:
       title: About me
       overview: I am a software engineer mostly interested in developing practical web applications and services. I have been creating software since 1999. As of late I use mainly Ruby and JavaScript to build stuff. I am open to any technology that is proved suitable for a particular business need. In my spare time I contribute to open source projects as I believe that open source is the right way to build world-class applications. I am obsessed with writing simple code that is easy to read and understand. I do not always succeed in crafting clean code but I have never stopped trying and improving.
       blog-overview: You can understand a lot about me as a programmer by going through my blog articles. They mostly elaborate on technical approaches that are proven to work for teams at large scale. As you may get away with any approach when working alone on a small application. But when projects and teams get bigger  things get messy quite quickly. I am trying to be as objective as possible as I've being through a lot in the past almost %{years} years. Still the reader can sense an opinionated positions on controversial topics. They simply show the path I have chosen to follow.

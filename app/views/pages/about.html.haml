@@ -1,0 +1,22 @@
+- provide :title, t('.title')
+
+.about
+  %h1= t('.title')
+  %section.overview
+    .image
+      = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
+    .text
+      %p= t('.overview')
+      %p= t('.blog-overview', years: Time.current.year - 1999)
+
+  %section
+    %ul.features
+      = render partial: 'pages/feature', collection: t('.features'), as: :feature
+
+  %section
+    %h2= t('.contact')
+    .social
+      = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
+      = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
+      = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
+      = link_to icon('envelope-o'), 'mailto:me@ralin.net'
