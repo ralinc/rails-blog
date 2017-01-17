@@ -1,0 +1,3 @@
+language: ruby
+before_script:
+  - psql -c 'create database ralin_website_test;' -U postgres
