@@ -5,35 +5,24 @@ engines:
   bundler-audit:
     enabled: true
   coffeelint:
-    enabled: true
+    enabled: false
   duplication:
     enabled: true
     config:
       languages:
       - ruby
-      - javascript
-      - python
-      - php
   fixme:
     enabled: true
   rubocop:
     enabled: true
 ratings:
   paths:
-  - Gemfile.lock
   - "**.erb"
   - "**.haml"
   - "**.rb"
-  - "**.rhtml"
-  - "**.slim"
-  - "**.coffee"
-  - "**.inc"
-  - "**.js"
-  - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
 exclude_paths:
+- app/assets
+- bin/
 - config/
 - db/
 - spec/
