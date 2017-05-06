@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  force_ssl if: :ssl?, host: Settings.https_host
-
   def new
   end
 

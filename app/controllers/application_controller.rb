@@ -5,10 +5,6 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def ssl?
-    Settings.ssl
-  end
-
   def force_authentication
     return if authenticated?
     store_return_to_url
