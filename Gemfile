@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'autoprefixer-rails'
-gem 'bcrypt'
 gem 'coderay'
 gem 'coffee-rails'
 gem 'config'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'font-awesome-sass'
 gem 'haml'
 gem 'high_voltage'

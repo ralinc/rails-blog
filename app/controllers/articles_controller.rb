@@ -1,13 +1,13 @@
 class ArticlesController < ApplicationController
-  before_action :force_authentication, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    force_authentication if status
+    authenticate_user! if status
     @articles = ArticlesFilter.run status
   end
 
   def show
-    force_authentication if wip?
+    authenticate_user! unless article.published?
     article
   end
 
@@ -54,9 +54,5 @@ class ArticlesController < ApplicationController
 
   def status
     @status ||= params[:status]
-  end
-
-  def wip?
-    @wip ||= !article.published?
   end
 end

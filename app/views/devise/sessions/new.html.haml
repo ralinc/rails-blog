@@ -2,7 +2,7 @@
 
 .login
   .panel
-    = form_for(:session, url: login_path) do |f|
+    = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       = f.email_field :email, placeholder: 'Email'
       = f.password_field :password, placeholder: 'Password'
       = f.submit 'Login'

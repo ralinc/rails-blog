@@ -6,38 +6,38 @@ describe ArticlesController do
   describe 'guest user' do
     it 'cannot filter articles' do
       get :index, params: {status: 'wip'}
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot view WiP article' do
       article = create :wip_article
       get :show, params: {id: article}
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot open new article page' do
       get :new
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot create article' do
       post :create
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot edit article' do
       get :edit, params: {id: article}
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot update article' do
       put :update, params: {id: article}
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
 
     it 'cannot delete article' do
       delete :destroy, params: {id: article}
-      expect(response).to redirect_to(login_url)
+      expect(response).to redirect_to(new_user_session_url)
     end
   end
 
@@ -45,7 +45,7 @@ describe ArticlesController do
     let(:user) { create :user }
 
     before do
-      create_session_for user
+      sign_in user
     end
 
     describe 'creates article' do

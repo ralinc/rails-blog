@@ -6,7 +6,7 @@ describe 'articles/show.html.haml' do
 
   context 'when user is authenticated' do
     before do
-      create_session_for user
+      sign_in user
     end
 
     it 'displays admin links' do

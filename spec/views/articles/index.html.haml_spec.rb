@@ -14,7 +14,7 @@ describe 'articles/index.html.haml' do
     let(:user) { create :user }
 
     before do
-      create_session_for user
+      sign_in user
     end
 
     it 'displays admin links' do

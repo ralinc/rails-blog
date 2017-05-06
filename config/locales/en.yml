@@ -5,6 +5,7 @@ en:
     about: About
     blog: Blog
     admin: Admin
+    login: Login
     logout: Logout
   footer:
     text: |

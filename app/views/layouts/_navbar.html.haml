@@ -5,5 +5,8 @@
     = link_to t('nav.home'), root_path
     = link_to t('nav.about'), page_path('about')
     = link_to t('nav.blog'), articles_path
-    - if authenticated?
-      = link_to t('nav.logout'), logout_path, method: :delete
+    - if user_signed_in?
+      = link_to t('nav.logout'), destroy_user_session_path, method: :delete
+    - else
+      = link_to t('nav.login'), new_user_session_path
+

@@ -1,18 +1,16 @@
 module SessionHelper
-  def create_session_for(user)
-    session[:user_id] = user.id
-  end
-
   def login
     user = create(:user)
-    visit login_path
+    visit new_user_session_path
     submit_login_form user
   end
 
   def submit_login_form(user)
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
-    click_on 'Login'
+    within('form') do
+      fill_in 'Email', with: user.email
+      fill_in 'Password', with: user.password
+      click_on 'Login'
+    end
   end
 
   def expect_login_page(page)
