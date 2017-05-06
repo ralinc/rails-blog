@@ -26,3 +26,8 @@ config/environments/*.local.yml
 .keep
 coverage/*
 bin/cc
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

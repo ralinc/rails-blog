@@ -1,5 +1,7 @@
-class ArticleDecorator < Draper::Decorator
-  delegate_all
+class ArticleDecorator < SimpleDelegator
+  def class
+    __getobj__.class
+  end
 
   def markdown
     markdown_renderer.render(content).html_safe

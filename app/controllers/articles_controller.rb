@@ -2,13 +2,13 @@ class ArticlesController < ApplicationController
   before_action :force_authentication, except: [:index, :show]
 
   def index
-    status = params[:status]
     force_authentication if status
-    @articles = ArticlesFilter.filter_by_status status
+    @articles = ArticlesFilter.run status
   end
 
   def show
-    force_authentication if article.status != 'published'
+    force_authentication if wip?
+    article
   end
 
   def new
@@ -26,11 +26,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    load_article
+    article
   end
 
   def update
-    if article.update_attributes article_params
+    if article.update article_params
       redirect_to article
     else
       render :edit
@@ -49,7 +49,14 @@ class ArticlesController < ApplicationController
   end
 
   def article
-    @article ||= Article.find_by(slug: params[:id]).decorate
+    @article ||= ArticleFinder.run params[:id]
   end
-  alias load_article article
+
+  def status
+    @status ||= params[:status]
+  end
+
+  def wip?
+    @wip ||= !article.published?
+  end
 end

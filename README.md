@@ -3,7 +3,7 @@
 [![Test Coverage](https://codeclimate.com/github/ralinc/ralin.net/badges/coverage.svg)](https://codeclimate.com/github/ralinc/ralin.net/coverage)
 [![Code Climate](https://codeclimate.com/github/ralinc/ralin.net/badges/gpa.svg)](https://codeclimate.com/github/ralinc/ralin.net)
 
-This is the source code repository for my digital space [www.ralin.net](http://www.ralin.net/). The website contains some information about me, social links and my blog. It is built using open source software and tools like Ruby on Rails, Sass, CoffeeScript and PostgreSQL. It is deployed on [OpenShift](https://www.openshift.com/), the PaaS by Red Hat, running on Passenger inside Apache. Its source code is completely open and any part of it can be used for any purpose. It is built from a scratch using a minimal set of dependencies. The project has 100% code coverage. You can take a look at the specs to see how I test every bit of a Rails application using RSpec and Capybara.
+This is the source code repository for my digital space [www.ralin.net](http://www.ralin.net/). The website contains some information about me, social links and my blog. It is built using open source software and tools like Ruby on Rails and PostgreSQL. Its source code is completely open and any part of it can be used for any purpose. It is built from a scratch using a minimal set of dependencies. The project has 100% code coverage. You can take a look at the specs to see how I test every bit of a Rails application using RSpec and Capybara.
 
 ## How to use it?
 
@@ -21,22 +21,18 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 
 ## Stack
 
-- Language: Ruby
-- Web Framework: Rails
-- Storage: PostgreSQL
-- Deployment: OpenShift
+- Language: Ruby 2.3
+- Web Framework: Rails 5.1
+- Storage: PostgreSQL 9.6.2
+- Deployment: AWS
 
-## Features 
+## Features
 
 - Markdown blog using [Redcarpet](https://github.com/vmg/redcarpet)
 - Single admin user
 - Password authentication
-- Protected access to admin area
-- Embedding gravatar images
-- WiP (admin only visible) and published blog posts
-- Blog post friendly URL (slug)
-- Facebook 'Like' button on blog posts
+- WiP (private) and published (public) blog posts
 - Social share buttons via [social-share-button](https://github.com/huacnlee/social-share-button)
-- Blog post comments via [Disqus](https://disqus.com/)
-- Google Analytics working with [Turbolinks 5](https://github.com/turbolinks/turbolinks)
-- Blog posts tagging
+- Blog post comments with [Disqus](https://disqus.com/)
+- Blog post friendly URL (slug)
+- Blog post tagging

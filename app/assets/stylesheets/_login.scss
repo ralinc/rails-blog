@@ -1,8 +1,7 @@
 .login {
-  margin: 2rem 0 4rem;
+  margin: 2rem 0 8rem;
 
   .panel {
-    border: 1px solid $color-silver;
     margin: 0 auto;
     padding: 4rem 1rem 6rem;
     width: 100%;
@@ -13,15 +12,15 @@
   }
 
   h1 {
-    margin: 0;
     letter-spacing: .1rem;
+    margin: 0;
   }
 
   input {
     border: 1px solid $color-blue;
     border-radius: 2px;
     font-size: .9rem;
-    height: 4rem;
+    height: 3rem;
     margin: .25rem auto;
     padding: .375rem .75rem;
     width: 100%;

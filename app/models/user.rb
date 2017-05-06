@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   validates :name, presence: true, length: { minimum: 3, maximum: 100 }
   validates :password, presence: true, length: { minimum: 6, maximum: 20 }
   validates :email, presence: true,

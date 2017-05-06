@@ -1,4 +1,4 @@
-class Article < ActiveRecord::Base
+class Article < ApplicationRecord
   default_scope { order(created_at: :desc) }
 
   enum status: [:wip, :published]

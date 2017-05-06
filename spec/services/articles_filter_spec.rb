@@ -8,17 +8,17 @@ describe ArticlesFilter do
     end
 
     it 'returns all articles' do
-      articles = ArticlesFilter.filter_by_status 'all'
+      articles = ArticlesFilter.run 'all'
       expect(articles).to eq(Article.all)
     end
 
     it 'returns only WiP articles' do
-      wip_articles = ArticlesFilter.filter_by_status 'wip'
+      wip_articles = ArticlesFilter.run 'wip'
       expect(wip_articles).to eq(Article.wip)
     end
 
     it 'returns only published articles' do
-      expect(ArticlesFilter.filter_by_status).to eq(Article.published)
+      expect(ArticlesFilter.run).to eq(Article.published)
     end
   end
 end

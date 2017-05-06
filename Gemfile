@@ -1,15 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
-
 gem 'autoprefixer-rails'
 gem 'bcrypt'
 gem 'coderay'
 gem 'coffee-rails'
 gem 'config'
-gem 'draper'
 gem 'font-awesome-sass'
-gem 'haml', '>= 4.1.0.beta.1'
+gem 'haml'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'normalize-rails'
@@ -33,6 +30,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'listen'
+  gem 'scss-lint'
   gem 'web-console'
 end
 

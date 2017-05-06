@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'articles/show.html.haml' do
-  let(:article) { create(:article).decorate }
+  let(:article) { ArticleDecorator.new create(:article) }
   let(:user) { create :user }
 
   context 'when user is authenticated' do

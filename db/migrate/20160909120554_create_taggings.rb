@@ -1,4 +1,4 @@
-class CreateTaggings < ActiveRecord::Migration
+class CreateTaggings < ActiveRecord::Migration[5.0]
   def change
     create_table :taggings do |t|
       t.belongs_to :article, index: true, foreign_key: true

@@ -1,1 +1,50 @@
 en:
+  brand: Ralin
+  nav:
+    home: Home
+    about: About
+    blog: Blog
+    admin: Admin
+    logout: Logout
+  footer:
+    text: |
+      My e-home is built with open source software:
+        <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
+        and
+        <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>.
+      It runs on <a href="http://puma.io/" target="_blank">Puma</a> on Linux.
+      The source code is open at:
+        <a href="https://github.com/ralinc/ralin.net" target=\"_blank\">ralinc/ralin.net</a>
+  pages:
+    about:
+      title: About me
+      overview: I am a software engineer mostly interested in developing practical web applications and services. I have been creating software since 1999. As of late I use mainly Ruby and JavaScript to build stuff. I am open to any technology that is proved suitable for a particular business need. In my spare time I contribute to open source projects as I believe that open source is the right way to build world-class applications. I am obsessed with writing simple code that is easy to read and understand. I do not always succeed in crafting clean code but I have never stopped trying and improving.
+      blog-overview: You can understand a lot about me as a programmer by going through my blog articles. They mostly elaborate on technical approaches that are proven to work for teams at large scale. As you may get away with any approach when working alone on a small application. You may even write it in zeros and ones. But when projects and teams get bigger  things get messy quite quickly. I am trying to be as objective as possible as I've being through a lot in the past almost %{years} years. Still the reader can sense an opinionated positions on controversial topics. They simply show the path I have chosen to follow.
+      features: [{
+          icon: "code",
+          title: "Apps",
+          text: "I love creating solid web applications and services. I am passionate about smart designs that improve the user experience and are intuitive to work with. Things should be clean and simple. Things should not be too fancy and over-engineered.",
+          link: "https://github.com/ralinc"
+        }, {
+          icon: "pencil",
+          title: "Blog",
+          text: "My blog is mostly technical and reflects on my daily work. You can find writings on using open source frameworks and tools, creating web applications and services, good practices, bad practices, clean code, anti-patterns, refactoring, TDD, BDD. ",
+          link: "/articles"
+        }]
+      contact: Get in touch
+    home:
+      title: Home
+      header: Hello, I am Ralin
+      text: software developer and open source enthusiast
+  articles:
+    index:
+      title: Blog
+    header:
+      title: Ralin Chimev
+      new: New
+      wip: WiP
+      published: Published
+      all: All
+      number_of_posts: Number of posts
+  article:
+    social_share_text: Like the article? Share it!
