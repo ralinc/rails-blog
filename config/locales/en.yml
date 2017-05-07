@@ -23,7 +23,7 @@ en:
       blog-overview: You can understand a lot about me as a programmer by going through my blog articles. They mostly elaborate on technical approaches that are proven to work for teams at large scale. As you may get away with any approach when working alone on a small application. You may even write it in zeros and ones. But when projects and teams get bigger  things get messy quite quickly. I am trying to be as objective as possible as I've being through a lot in the past almost %{years} years. Still the reader can sense an opinionated positions on controversial topics. They simply show the path I have chosen to follow.
       features: [{
           icon: "code",
-          title: "Apps",
+          title: "Code",
           text: "I love creating solid web applications and services. I am passionate about smart designs that improve the user experience and are intuitive to work with. Things should be clean and simple. Things should not be too fancy and over-engineered.",
           link: "https://github.com/ralinc"
         }, {
