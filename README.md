@@ -23,7 +23,7 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 
 - Language: Ruby 2.3
 - Web Framework: Rails 5.1
-- Storage: PostgreSQL 9.6.2
+- Storage: PostgreSQL 9.6
 - Deployment: AWS
 
 ## Features
