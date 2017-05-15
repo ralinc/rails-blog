@@ -1,0 +1,32 @@
+.about-feature {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  .image {
+    $size: 5rem;
+
+    border: 1px solid $color-blue;
+    border-radius: 50%;
+    display: flex;
+    height: $size;
+    justify-content: center;
+    margin-right: $spacing;
+    width: $size;
+
+    .fa {
+      align-self: center;
+      color: $color-blue;
+      font-size: 2rem;
+    }
+  }
+
+  .text { flex: 2; }
+
+  @media (min-width: $extra-small-width) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}

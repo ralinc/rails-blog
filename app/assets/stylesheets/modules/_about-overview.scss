@@ -1,0 +1,16 @@
+.about-overview {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .image { flex: 1; margin: 0; }
+  .text { flex: 3; margin: 0; }
+  .text p { flex: 3; margin: 0 0 $spacing; }
+
+  @media (min-width: $small-width) {
+    align-items: flex-start;
+    flex-direction: row;
+
+    .image { margin-right: $spacing; }
+  }
+}

@@ -1,14 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
 @import 'normalize-rails';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import 'social-share-button';
+
+@import 'variables';
 @import 'base';
 @import 'layout';
 @import 'navbar';
 @import 'footer';
-@import 'login';
+
 @import 'home';
-@import 'about';
+@import 'login';
 @import 'articles';
 @import 'article';
+
+@import 'modules/about-overview';
+@import 'modules/about-features';
+@import 'modules/about-feature';
+@import 'modules/about-social';

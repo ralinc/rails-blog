@@ -1,0 +1,14 @@
+.about-features {
+  ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+    @media (min-width: $medium-width) {
+      flex-direction: row;
+    }
+  }
+}

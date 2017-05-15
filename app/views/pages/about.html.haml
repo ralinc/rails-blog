@@ -1,22 +1,22 @@
 - provide :title, t('.title')
 
-.about
-  %h1= t('.title')
-  %section.overview
-    .image
-      = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
-    .text
-      %p= t('.overview')
-      %p= t('.blog-overview', years: Time.current.year - 1999)
+%h1= t '.title'
 
-  %section
-    %ul.features
-      = render partial: 'pages/feature', collection: t('.features'), as: :feature
+.about-overview
+  .image
+    = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
+  .text
+    %p= t '.overview'
+    %p= t '.blog-overview', years: Time.current.year - 1999
 
-  %section
-    %h2= t('.contact')
-    .social
-      = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
-      = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
-      = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
-      = link_to icon('envelope-o'), 'mailto:ralin.chimev@gmail.com'
+.about-features
+  %ul
+    = render partial: 'pages/feature', collection: t('.features'), as: :feature
+
+.about-social
+  %h2= t '.contact'
+  .links
+    = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
+    = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
+    = link_to icon('facebook'), 'https://facebook.com/ralin.chimev', target: '_blank'
+    = link_to icon('envelope-o'), 'mailto:ralin.chimev@gmail.com'

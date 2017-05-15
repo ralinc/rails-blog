@@ -1,0 +1,23 @@
+.about-social {
+  .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    a {
+      border: 1px solid $color-silver;
+      box-shadow: 0 3px 8px $box-shadow;
+      margin: .2rem;
+    }
+
+    i {
+      $size: 3rem;
+
+      color: $color-blue;
+      font-size: 3rem;
+      height: $size;
+      margin: $large-spacing;
+      width: $size;
+    }
+  }
+}
