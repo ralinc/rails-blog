@@ -1,4 +1,4 @@
-.home {
+.home-hello {
   background-image: image-url('background.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,8 @@
     height: 50vh;
     justify-content: center;
 
-    h1, p {
+    h1,
+    p {
       align-self: center;
       margin: 0;
       text-align: center;
