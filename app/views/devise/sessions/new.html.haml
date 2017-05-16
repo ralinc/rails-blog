@@ -1,8 +1,9 @@
-- provide :title, 'Login'
+- provide :title, 'Sign In'
 
-.login
+.login-form
   .panel
+    %h3 Admin Only Access
     = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       = f.email_field :email, placeholder: 'Email'
       = f.password_field :password, placeholder: 'Password'
-      = f.submit 'Login'
+      = f.submit 'Sign In'

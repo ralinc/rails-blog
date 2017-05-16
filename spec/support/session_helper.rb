@@ -9,7 +9,7 @@ module SessionHelper
     within('form') do
       fill_in 'Email', with: user.email
       fill_in 'Password', with: user.password
-      click_on 'Login'
+      click_on 'Sign In'
     end
   end
 
@@ -23,7 +23,7 @@ module SessionHelper
   end
 
   def expect_login_page(page)
-    expect(page).to have_title('Login - Ralin Chimev')
+    expect(page).to have_title('Sign In - Ralin Chimev')
     expect(page).to have_css('input[type=email]')
     expect(page).to have_css('input[type=password]')
     expect(page).to have_css('input[type=submit]')

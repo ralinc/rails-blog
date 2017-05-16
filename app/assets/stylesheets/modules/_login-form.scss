@@ -1,0 +1,34 @@
+.login-form {
+  margin: 5rem 0 10rem;
+
+  .panel {
+    margin: 0 auto;
+    max-width: 25rem;
+
+    h1 {
+      letter-spacing: .1rem;
+      margin: 0;
+    }
+
+    input {
+      border: 1px solid $color-grey;
+      border-radius: 4px;
+      height: 3rem;
+      margin: .25rem auto;
+      padding: 1rem;
+      width: 100%;
+    }
+
+    [type=submit] {
+      background-color: $color-blue;
+      border: 0;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 700;
+      height: 3rem;
+      margin-top: $small-spacing;
+      padding: 0;
+    }
+  }
+}
