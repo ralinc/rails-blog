@@ -1,20 +1,62 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
 }
 
 body {
-  background: $color-white;
-  color: $color-text;
-  font-family: 'Roboto', sans-serif;
-  font-size: .875rem;
-  font-weight: 300;
-  line-height: 1.6;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; }
-h1 { font-size: 2rem; letter-spacing: .15rem; }
-h2 { letter-spacing: .1rem; }
-a { color: $color-blue; text-decoration: none; }
-img { width: 100%; }
-textarea { overflow: auto; }
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: 300;
+  line-height: $heading-line-height;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+picture {
+  border-radius: $base-border-radius;
+  margin: 0;
+  max-width: 100%;
+}
+
+textarea {
+  overflow: auto;
+}

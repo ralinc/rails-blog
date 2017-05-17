@@ -1,6 +1,7 @@
 .blog-article {
   header {
     border-bottom: 1px solid $color-blue;
+    font-weight: 300;
     min-height: 1.5rem;
 
     a {
@@ -24,7 +25,7 @@
 
   img {
     display: block;
-    margin: $spacing auto;
+    margin: $base-spacing auto;
     width: 75%;
   }
 
@@ -59,15 +60,15 @@
 
   pre {
     background-color: $color-light-grey;
-    border-radius: $border-radius;
+    border-radius: $base-border-radius;
     font-size: 90%;
-    padding: $spacing;
+    padding: $base-spacing;
   }
 
   .note {
     background: $color-pale;
     border-left: 1px solid $color-blue;
-    padding: $small-spacing $spacing;
+    padding: $small-spacing $base-spacing;
   }
 
   footer {
@@ -80,7 +81,7 @@
     span {
       font-size: 1rem;
       font-weight: 400;
-      margin-right: $spacing;
+      margin-right: $base-spacing;
     }
   }
 
@@ -103,7 +104,7 @@
     select,
     textarea {
       border: 1px solid $color-blue;
-      border-radius: $border-radius;
+      border-radius: $base-border-radius;
       padding: $small-spacing;
       width: 100%;
     }
@@ -117,11 +118,11 @@
       cursor: pointer;
       font-size: 1rem;
       letter-spacing: .1rem;
-      margin-top: $spacing;
-      padding: $small-spacing $spacing;
+      margin-top: $base-spacing;
+      padding: $small-spacing $base-spacing;
       width: auto;
     }
 
-    .input { margin-top: $spacing; }
+    .input { margin-top: $base-spacing; }
   }
 }

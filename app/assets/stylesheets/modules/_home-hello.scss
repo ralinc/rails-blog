@@ -16,10 +16,13 @@
     h1,
     p {
       align-self: center;
+      font-weight: 300;
       margin: 0;
       text-align: center;
     }
 
-    p { color: $color-red; }
+    p {
+      color: $color-red;
+    }
   }
 }

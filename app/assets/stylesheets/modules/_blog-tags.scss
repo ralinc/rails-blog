@@ -3,10 +3,10 @@
 
   a {
     background-color: $color-light-blue;
-    border-radius: $border-radius;
+    border-radius: $base-border-radius;
     color: $color-white;
-    font-size: .8rem;
-    margin-right: $small-spacing;
-    padding: .3rem .6rem;
+    font-weight: 300;
+    margin-right: $extra-small-spacing;
+    padding: $extra-small-spacing $small-spacing;
   }
 }

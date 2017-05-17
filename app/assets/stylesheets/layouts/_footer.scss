@@ -1,9 +1,10 @@
 .footer {
-  margin: $large-spacing 0 $spacing;
+  margin: $extra-large-spacing 0 $base-spacing;
 
   p {
     border-top: 1px solid $color-grey;
-    padding: $spacing 0;
+    font-weight: 300;
+    padding: $base-spacing 0;
     text-align: center;
   }
 }
