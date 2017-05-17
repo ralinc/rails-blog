@@ -9,12 +9,11 @@ en:
     logout: Logout
   footer:
     text: |
-      My e-home is built with open source software:
+      My e-home is built using
         <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
         and
         <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>.
-      It runs on <a href="http://puma.io/" target="_blank">Puma</a> on Linux.
-      The source code is open at:
+      Its source code is open at:
         <a href="https://github.com/ralinc/ralin.net" target=\"_blank\">ralinc/ralin.net</a>
   pages:
     about:
