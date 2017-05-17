@@ -1,9 +1,9 @@
 .footer {
-  margin: 4rem 0 2rem;
+  margin: $large-spacing 0 $spacing;
 
   p {
     border-top: 1px solid $color-grey;
-    padding: 2rem 0;
+    padding: $spacing 0;
     text-align: center;
   }
 }

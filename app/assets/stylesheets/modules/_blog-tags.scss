@@ -1,10 +1,12 @@
 .blog-tags {
+  margin-bottom: $large-spacing;
+
   a {
     background-color: $color-light-blue;
-    border-radius: .2rem;
+    border-radius: $border-radius;
     color: $color-white;
     font-size: .8rem;
-    margin-right: .1rem;
+    margin-right: $small-spacing;
     padding: .3rem .6rem;
   }
 }

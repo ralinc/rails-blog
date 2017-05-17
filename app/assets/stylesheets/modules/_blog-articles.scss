@@ -22,19 +22,19 @@
   .total {
     color: $color-grey;
     font-size: .75rem;
-    margin-bottom: 3rem;
+    margin-bottom: $large-spacing;
     padding: .1rem 0 0;
     text-align: left;
   }
 
   ul {
     list-style-type: none;
-    margin: 4rem 0;
+    margin: $large-spacing 0;
     padding: 0;
   }
 
   li {
-    margin: 3rem 0;
+    margin: $large-spacing 0;
 
     h2,
     p { margin: 0; }

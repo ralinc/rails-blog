@@ -1,7 +1,7 @@
 .navbar {
   letter-spacing: .1rem;
-  margin-bottom: 1rem;
-  padding: 1.5rem 0;
+  margin-bottom: $spacing;
+  padding: $spacing 0;
   text-transform: uppercase;
 
   .container {
@@ -20,8 +20,8 @@
   }
 
   span {
-    display: none;
     border-bottom: 1px solid transparent;
+    display: none;
 
     @media (min-width: $extra-small-width) {
       display: block;
@@ -47,20 +47,23 @@
     border-bottom: 1px solid transparent;
     color: $color-text;
     display: block;
-    margin: .5rem;
+    margin: $small-spacing;
 
     &:hover {
       border-bottom: 1px solid $color-text;
       transition: all .4s ease-in-out;
     }
 
-    &:hover, &:link, &:active, &:visited {
+    &:hover,
+    &:link,
+    &:active,
+    &:visited {
       outline: 0;
       text-decoration: none;
     }
 
     @media (min-width: $extra-small-width) {
-      margin: 1rem;
+      margin: $spacing;
     }
   }
 }

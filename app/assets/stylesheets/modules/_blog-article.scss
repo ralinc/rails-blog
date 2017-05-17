@@ -5,7 +5,7 @@
 
     a {
       float: left;
-      margin-right: .5rem;
+      margin-right: $small-spacing;
     }
 
     a:nth-child(3) {
@@ -15,24 +15,24 @@
   }
 
   article {
-    margin: 3rem 0;
+    margin: $large-spacing 0;
   }
 
   h1 { margin: 0; }
   ul { list-style-type: initial; }
-  p { margin: 1rem 0; }
+  p { margin: $small-spacing 0; }
 
   img {
     display: block;
-    margin: 2rem auto;
+    margin: $spacing auto;
     width: 75%;
   }
 
   blockquote {
     background: $color-light-grey;
     border-left: .2rem solid $color-blue;
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: $small-spacing 0;
+    padding: $small-spacing;
     quotes: '\201C''\201D''\2018''\2019';
 
     &::before {
@@ -59,15 +59,15 @@
 
   pre {
     background-color: $color-light-grey;
-    border-radius: 3px;
+    border-radius: $border-radius;
     font-size: 90%;
-    padding: 1rem;
+    padding: $spacing;
   }
 
   .note {
     background: $color-pale;
     border-left: 1px solid $color-blue;
-    padding: .75rem 1rem;
+    padding: $small-spacing $spacing;
   }
 
   footer {
@@ -75,12 +75,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem 0;
+    margin: $large-spacing 0;
 
     span {
       font-size: 1rem;
       font-weight: 400;
-      margin-right: 1rem;
+      margin-right: $spacing;
     }
   }
 
@@ -103,8 +103,8 @@
     select,
     textarea {
       border: 1px solid $color-blue;
-      border-radius: 3px;
-      padding: .5rem;
+      border-radius: $border-radius;
+      padding: $small-spacing;
       width: 100%;
     }
 
@@ -117,11 +117,11 @@
       cursor: pointer;
       font-size: 1rem;
       letter-spacing: .1rem;
-      margin-top: 1rem;
-      padding: .5rem 1.5rem;
+      margin-top: $spacing;
+      padding: $small-spacing $spacing;
       width: auto;
     }
 
-    .input { margin-top: 1rem; }
+    .input { margin-top: $spacing; }
   }
 }
