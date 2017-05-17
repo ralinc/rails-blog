@@ -11,12 +11,12 @@
 @import 'navbar';
 @import 'footer';
 
-@import 'modules/login-form';
-@import 'modules/home-hello';
 @import 'modules/about-overview';
 @import 'modules/about-features';
 @import 'modules/about-feature';
 @import 'modules/about-social';
-
-@import 'articles';
-@import 'article';
+@import 'modules/article';
+@import 'modules/articles';
+@import 'modules/home-hello';
+@import 'modules/login-form';
+@import 'modules/tags';

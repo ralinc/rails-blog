@@ -1,5 +1,3 @@
-@import 'tags';
-
 .article {
   header {
     border-bottom: 1px solid $color-blue;
@@ -18,65 +16,58 @@
 
   article {
     margin: 3rem 0;
+  }
 
-    h1 {
-      margin: 0;
-    }
+  h1 { margin: 0; }
+  ul { list-style-type: initial; }
+  p { margin: 1rem 0; }
 
-    ul {
-      list-style-type: initial;
+  img {
+    display: block;
+    margin: 2rem auto;
+    width: 75%;
+  }
+
+  blockquote {
+    background: $color-light-grey;
+    border-left: .2rem solid $color-blue;
+    margin: 1rem 0;
+    padding: 1rem;
+    quotes: '\201C''\201D''\2018''\2019';
+
+    &::before {
+      color: $color-blue;
+      content: open-quote;
+      font-size: 4em;
+      line-height: .1em;
+      margin-right: .25em;
+      vertical-align: -.5em;
     }
 
     p {
-      margin: 1rem 0;
+      margin: 0;
     }
+  }
 
-    img {
-      width: 75%;
-      margin: 2rem auto;
-      display: block;
-    }
+  pre,
+  code {
+    overflow: auto;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+  }
 
-    blockquote {
-      background: $color-light-grey;
-      border-left: .2rem solid $color-blue;
-      margin: 1rem 0;
-      padding: 1rem;
-      quotes: '\201C''\201D''\2018''\2019';
+  pre {
+    background-color: $color-light-grey;
+    border-radius: 3px;
+    font-size: 90%;
+    padding: 1rem;
+  }
 
-      &:before {
-        color: $color-blue;
-        content: open-quote;
-        font-size: 4em;
-        line-height: .1em;
-        margin-right: .25em;
-        vertical-align: -.5em;
-      }
-
-      p {
-        margin: 0;
-      }
-    }
-
-    pre, code {
-      overflow: auto;
-      white-space: pre;
-      word-break: normal;
-      word-wrap: normal;
-    }
-
-    pre {
-      background-color: $color-light-grey;
-      border-radius: 3px;
-      font-size: 90%;
-      padding: 1rem;
-    }
-
-    .note {
-      background: $color-pale;
-      border-left: 1px solid $color-blue;
-      padding: .75rem 1rem;
-    }
+  .note {
+    background: $color-pale;
+    border-left: 1px solid $color-blue;
+    padding: .75rem 1rem;
   }
 
   footer {
@@ -108,20 +99,16 @@
   }
 
   form {
-    .input {
-      margin-top: 1rem;
-    }
-
-    input, select, textarea {
+    input,
+    select,
+    textarea {
       border: 1px solid $color-blue;
       border-radius: 3px;
       padding: .5rem;
       width: 100%;
     }
 
-    textarea {
-      min-height: 20vh;
-    }
+    textarea { min-height: 20vh; }
 
     [type=submit] {
       background-color: $color-blue;
@@ -134,5 +121,7 @@
       padding: .5rem 1.5rem;
       width: auto;
     }
+
+    .input { margin-top: 1rem; }
   }
 }

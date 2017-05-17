@@ -9,7 +9,7 @@ class Article < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
   validates :slug, presence: true,
-                   uniqueness: { case_sensitive: false },
+                   uniqueness: {case_sensitive: false},
                    slug: true
 
   def to_param
