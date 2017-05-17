@@ -5,12 +5,11 @@
 @import 'font-awesome';
 @import 'social-share-button';
 
-@import 'variables';
-@import 'base';
-@import 'layout';
-@import 'navbar';
-@import 'footer';
-
+@import 'common/variables';
+@import 'common/base';
+@import 'layouts/container';
+@import 'layouts/footer';
+@import 'layouts/navbar';
 @import 'modules/about-overview';
 @import 'modules/about-features';
 @import 'modules/about-feature';

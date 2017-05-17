@@ -15,7 +15,7 @@
 
     - haml_tag_if current_page?(root_path), '.home-hello' do
       = render partial: 'layouts/navbar'
-      .layout-container
+      .container
         = yield
 
     - unless current_page? root_path
