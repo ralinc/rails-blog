@@ -2,11 +2,10 @@
 :javascript
   var disqus_config = function () {
     this.page.url = "#{request.original_url}"
-    this.page.identifier = "#{@article.id}"
-    this.page.title = "#{sanitize(@article.title)}"
+    this.page.identifier = "#{@article.slug}"
   };
 
-  (function() { // DON'T EDIT BELOW THIS LINE
+  (function() {
     var d = document, s = d.createElement('script');
     s.src = '//ralin.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
