@@ -36,3 +36,4 @@ This is the source code repository for my digital space [www.ralin.net](http://w
 - Blog post comments with [Disqus](https://disqus.com/)
 - Blog post friendly URL (slug)
 - Blog post tagging
+- Blog pagination with [Kaminari](https://github.com/kaminari/kaminari)

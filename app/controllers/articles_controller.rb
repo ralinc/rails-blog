@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
 
   def index
     authenticate_user! if status
-    @articles = ArticlesFilter.run status
+
+    @articles = ArticlesFilter.run(status).page params[:page]
   end
 
   def show

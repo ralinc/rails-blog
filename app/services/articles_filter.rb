@@ -3,9 +3,9 @@ module ArticlesFilter
 
   def run(filter = nil)
     case filter
-      when 'all' then Article.all
-      when 'wip' then Article.wip
-      else Article.published
+    when 'all' then Article.all
+    when 'wip' then Article.wip
+    else Article.published
     end
   end
 end

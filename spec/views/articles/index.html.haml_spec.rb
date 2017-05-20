@@ -2,21 +2,20 @@ require 'rails_helper'
 
 describe 'articles/index' do
   let(:articles) do
-    articles = create_list :article, 3
-    articles.map { |article| ArticleDecorator.new article }
+    create_list :article, 3
+    ArticlesFilter.run.page
   end
 
   before do
-    assign(:articles, articles)
+    assign :articles, articles
   end
 
   it 'shows each article date' do
-    article = create :article, date: '2017-05-19 11:49'
-    assign(:articles, [ArticleDecorator.new(article)])
-
     render
 
-    expect(rendered).to have_content('May 19, 2017 11:49')
+    Article.all.each do |article|
+      expect(rendered).to have_content(article.date.strftime('%b %d, %Y %H:%M'))
+    end
   end
 
   context 'when user is authenticated' do

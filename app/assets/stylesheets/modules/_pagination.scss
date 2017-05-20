@@ -1,0 +1,17 @@
+.pagination {
+  display: inline-block;
+
+  a {
+    border: 1px solid $action-color;
+    color: $action-color;
+    float: left;
+    padding: $small-spacing $base-spacing;
+    text-decoration: none;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $color-light-grey;
+    }
+  }
+}
+

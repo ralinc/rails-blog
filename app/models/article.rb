@@ -11,6 +11,8 @@ class Article < ApplicationRecord
   validates :slug, presence: true, slug: true, uniqueness: {case_sensitive: false}
   validates :title, presence: true
 
+  paginates_per 5
+
   def to_param
     slug_changed? ? slug_was : slug
   end
