@@ -24,10 +24,6 @@ describe Article do
     expect(article.tags_string).to eq 'abc, xyz'
   end
 
-  describe 'associations' do
-    it { should have_many(:taggings) }
-    it { should have_many(:tags).through(:taggings) }
-  end
 
   describe 'validations' do
     it { should validate_presence_of(:title) }
