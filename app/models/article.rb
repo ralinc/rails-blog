@@ -1,16 +1,15 @@
 class Article < ApplicationRecord
-  default_scope { order(created_at: :desc) }
+  default_scope { order(date: :desc) }
 
   enum status: [:wip, :published]
 
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
 
-  validates :title, presence: true
   validates :content, presence: true
-  validates :slug, presence: true,
-                   uniqueness: {case_sensitive: false},
-                   slug: true
+  validates :date, presence: true
+  validates :slug, presence: true, slug: true, uniqueness: {case_sensitive: false}
+  validates :title, presence: true
 
   def to_param
     slug_changed? ? slug_was : slug

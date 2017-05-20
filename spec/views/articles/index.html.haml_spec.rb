@@ -1,13 +1,22 @@
 require 'rails_helper'
 
-describe 'articles/index.html.haml' do
+describe 'articles/index' do
   let(:articles) do
     articles = create_list :article, 3
-    articles.map { |a| ArticleDecorator.new a }
+    articles.map { |article| ArticleDecorator.new article }
   end
 
   before do
     assign(:articles, articles)
+  end
+
+  it 'shows each article date' do
+    article = create :article, date: '2017-05-19 11:49'
+    assign(:articles, [ArticleDecorator.new(article)])
+
+    render
+
+    expect(rendered).to have_content('May 19, 2017 11:49')
   end
 
   context 'when user is authenticated' do
