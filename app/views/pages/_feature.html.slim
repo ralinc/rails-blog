@@ -1,0 +1,7 @@
+li.about-feature
+  .image
+    span class='fa fa-#{feature[:icon]}'
+  .text
+    = link_to feature[:link] do
+      h2= feature[:title]
+    p= feature[:text]

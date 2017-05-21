@@ -1,17 +1,17 @@
 - provide :title, @article.title
 
 .blog-article
-  %header
+  header
     = link_to 'BACK', articles_path
     - if user_signed_in?
       = link_to 'EDIT', edit_article_path(@article)
       = link_to 'DELETE', @article, method: :delete
 
-  %article
-    %h1= @article.title
+  article
+    h1= @article.title
     = render partial: 'tags'
-    ~ @article.markdown
-    %footer
+    = @article.markdown
+    footer
       = social_share_button_tag(@article.title)
 
 = render partial: 'comments'

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'layouts/_navbar.html.haml' do
+describe 'layouts/_navbar.html.slim' do
   context 'when user is authenticated' do
     let(:user) { create :user }
 

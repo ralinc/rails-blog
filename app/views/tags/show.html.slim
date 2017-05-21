@@ -1,11 +1,11 @@
 - provide :title, t('articles.index.title')
 
 .blog-articles
-  %header
-    %h1= @tag.name
+  header
+    h1= @tag.name
     .actions
       = link_to 'BACK', :back
     .total
       = "#{t('articles.header.number_of_posts').upcase}: #{@tag.articles.published.size}"
-  %ul
+  ul
     = render @tag.articles.published

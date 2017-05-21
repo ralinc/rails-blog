@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'articles/show.html.haml' do
+describe 'articles/show.html.slim' do
   let(:article) { ArticleDecorator.new create(:article) }
   let(:user) { create :user }
 

@@ -1,0 +1,4 @@
+li
+  = time_tag article.date
+  h2= link_to article.title, article
+  p= truncate(article.content, length: 255)

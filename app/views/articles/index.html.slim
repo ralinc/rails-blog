@@ -2,7 +2,7 @@
 
 .blog-articles
   = render 'articles_header'
-  %ul
+  ul
     = render @articles
   .pagination
     = link_to_prev_page @articles, '❮'

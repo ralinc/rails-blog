@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
+    meta name='viewport' content='width=device-width initial-scale=1'
+    meta name='author' content='Ralin Chimev'
+    title= page_title yield(:title)
+    = favicon_link_tag 'favicon.png', type: 'image/png'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    - if current_page? root_path
+      .home-hello
+        = render 'layouts/navbar'
+        .container
+          = yield
+    - else
+      = render 'layouts/navbar'
+      .container
+        = yield
+      = render 'layouts/footer'

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'articles/index' do
+describe 'articles/index.html.slim' do
   let(:articles) do
     create_list :article, 3
     ArticlesFilter.run.page
