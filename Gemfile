@@ -32,6 +32,7 @@ end
 
 group :development do
   gem 'listen'
+  gem 'rubocop'
   gem 'scss-lint'
   gem 'web-console'
 end

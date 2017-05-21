@@ -17,7 +17,7 @@ describe Article do
   it 'deserializes tags from a comma-separated string' do
     article = build :article, tags_string: 'abc, xyz'
 
-    expect(article.tags.map(&:name)).to eq %w(abc xyz)
+    expect(article.tags.map(&:name)).to eq %w[abc xyz]
   end
 
   it 'serializes tags to a comma-separated string' do
@@ -36,11 +36,11 @@ describe Article do
     it { should validate_uniqueness_of(:slug).case_insensitive }
     it { should validate_presence_of(:title) }
 
-    %w(a aaa a-a aaa-aaa aaa-aaa-aaa).each do |slug|
+    %w[a aaa a-a aaa-aaa aaa-aaa-aaa].each do |slug|
       it { should allow_value(slug).for(:slug) }
     end
 
-    %w(A Aaa a\ a aa"aa aa'aa 1 123 abc-123 1\ 2 aa?11 aa!11 aa.11).each do |slug|
+    %w[A Aaa a\ a aa"aa aa'aa 1 123 abc-123 1\ 2 aa?11 aa!11 aa.11].each do |slug|
       it { should_not allow_value(slug).for(:slug) }
     end
   end

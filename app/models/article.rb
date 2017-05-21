@@ -1,7 +1,7 @@
 class Article < ApplicationRecord
   default_scope { order(date: :desc) }
 
-  enum status: [:wip, :published]
+  enum status: %i[wip published]
 
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings

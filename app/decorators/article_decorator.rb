@@ -18,9 +18,9 @@ class ArticleDecorator < SimpleDelegator
       filter_html: false,
       hard_wrap: true,
       no_styles: true,
-      link_attributes: { rel: 'nofollow', target: '_blank' },
+      link_attributes: {rel: 'nofollow', target: '_blank'},
       prettify: true,
-      safe_links_only: true
+      safe_links_only: true,
     }
   end
 
@@ -30,7 +30,7 @@ class ArticleDecorator < SimpleDelegator
       footnotes: false,
       highlight: true,
       quote: true,
-      space_after_headers: false
+      space_after_headers: false,
     }
   end
 end
