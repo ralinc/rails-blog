@@ -8,10 +8,10 @@
       = link_to 'DELETE', @article, method: :delete
 
   article
-    h1= @article.title
+    h1 = @article.title
     = render partial: 'tags'
     = @article.markdown
-    footer
-      = social_share_button_tag(@article.title)
+
+  footer = social_share_button_tag @article.title
 
 = render partial: 'comments'

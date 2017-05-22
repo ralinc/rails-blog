@@ -6,15 +6,15 @@ h1= t '.title'
   .image
     = image_tag 'ralin.jpg', alt: 'Ralin Chimev'
   .text
-    p= t'.overview'
-    p= t'.blog-overview', years: Time.current.year - 1999
+    p = t '.overview'
+    p = t '.blog-overview', years: Time.current.year - 1999
 
 .about-features
   ul
     = render partial: 'pages/feature', collection: t('.features'), as: :feature
 
 .about-social
-  h2= t '.contact'
+  h2 = t '.contact'
   .links
     = link_to icon('github'), 'https://github.com/ralinc', target: '_blank'
     = link_to icon('linkedin'), 'https://www.linkedin.com/in/ralinchimev', target: '_blank'
