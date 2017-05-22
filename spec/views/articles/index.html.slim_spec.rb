@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'articles/index.html.slim' do
   let(:articles) do
     create_list :article, 3
-    ArticlesFilter.run.page
+    ArticlesFilter.run.page.decorate
   end
 
   before do

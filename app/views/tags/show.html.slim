@@ -8,4 +8,4 @@
     .total
       = "#{t('articles.header.number_of_posts').upcase}: #{@tag.articles.published.size}"
   ul
-    = render @tag.articles.published
+    = render @tag.articles.published.decorate

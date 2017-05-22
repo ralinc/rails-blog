@@ -1,10 +1,14 @@
-class ArticleDecorator < SimpleDelegator
-  def class
-    __getobj__.class
-  end
+class ArticleDecorator < ApplicationDecorator
+  delegate_all
+
+  MAX_PREVIEW_SIZE = 256
 
   def markdown
     markdown_renderer.render(content).html_safe
+  end
+
+  def preview_content
+    content.truncate MAX_PREVIEW_SIZE, omission: '...'
   end
 
   private

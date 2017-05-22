@@ -4,11 +4,12 @@ class ArticlesController < ApplicationController
   def index
     authenticate_user! if status
 
-    @articles = ArticlesFilter.run(status).page params[:page]
+    @articles = ArticlesFilter.run(status).page(page).decorate
   end
 
   def show
     authenticate_user! unless article.published?
+
     article
   end
 
@@ -55,5 +56,9 @@ class ArticlesController < ApplicationController
 
   def status
     @status ||= params[:status]
+  end
+
+  def page
+    @page ||= params[:page]
   end
 end
