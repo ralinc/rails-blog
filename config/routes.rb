@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { registrations: 'registrations' }
+  devise_for :users, controllers: {registrations: 'registrations'}
 
   resources :articles
   resources :tags, only: [:show]
 
-  get 'status', to: 'health_check#status'
+  get 'healthcheck', to: 'health_checks#status'
+  get 'fullcheck', to: 'health_checks#complete'
 end
