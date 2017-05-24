@@ -3,11 +3,11 @@ class ArticleDecorator < ApplicationDecorator
 
   MAX_PREVIEW_SIZE = 256
 
-  def markdown
+  def html
     markdown_renderer.render(content).html_safe
   end
 
-  def preview_content
+  def content_preview
     content.truncate MAX_PREVIEW_SIZE, omission: '...'
   end
 

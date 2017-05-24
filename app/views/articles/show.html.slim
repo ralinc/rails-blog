@@ -10,7 +10,7 @@
   article
     h1 = @article.title
     = render partial: 'tags'
-    = @article.markdown
+    = @article.html
 
   footer = social_share_button_tag @article.title
 
