@@ -7,22 +7,25 @@
   width: 100%;
 
   .panel {
+    align-self: center;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     height: 50vh;
     justify-content: center;
+    text-align: center;
 
-    h1,
-    p {
-      align-self: center;
-      font-weight: 300;
+    h1 {
+      font-size: 4rem;
+      font-weight: 100;
+      letter-spacing: 3px;
       margin: 0;
-      text-align: center;
     }
 
     p {
       color: $color-red;
+      font-weight: 300;
+      margin: 0;
     }
   }
 }
