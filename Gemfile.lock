@@ -63,9 +63,9 @@ GEM
     codeclimate-test-reporter (1.0.8)
       simplecov (<= 0.13)
     coderay (1.1.1)
-    coffee-rails (4.2.1)
+    coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0, < 5.2.x)
+      railties (>= 4.0.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -140,19 +140,11 @@ GEM
       mini_portile2 (~> 2.1.0)
     normalize-rails (4.1.1)
     orm_adapter (0.5.0)
+    parallel (1.11.2)
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.20.0)
     powerpack (0.1.1)
-    pry (0.10.4)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.4.2)
-      byebug (~> 9.0)
-      pry (~> 0.10)
-    pry-rails (0.3.6)
-      pry (>= 0.10.4)
     public_suffix (2.0.5)
     puma (3.8.2)
     rack (2.0.3)
@@ -213,7 +205,8 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    rubocop (0.48.1)
+    rubocop (0.49.0)
+      parallel (~> 1.10)
       parser (>= 2.3.3.1, < 3.0)
       powerpack (~> 0.1)
       rainbow (>= 1.99.1, < 3.0)
@@ -248,10 +241,9 @@ GEM
       actionpack (>= 3.1)
       railties (>= 3.1)
       slim (~> 3.0)
-    slop (3.6.0)
     social-share-button (0.10.0)
       coffee-rails
-    spring (2.0.1)
+    spring (2.0.2)
       activesupport (>= 4.2)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -266,9 +258,6 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
-    turbolinks (5.0.1)
-      turbolinks-source (~> 5)
-    turbolinks-source (5.0.3)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -284,7 +273,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    xpath (2.0.0)
+    xpath (2.1.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
@@ -292,10 +281,10 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  byebug
   capybara
   codeclimate-test-reporter
   coderay
-  coffee-rails
   config
   database_cleaner
   devise
@@ -308,8 +297,6 @@ DEPENDENCIES
   listen
   normalize-rails
   pg
-  pry-byebug
-  pry-rails
   puma
   rails
   rails-controller-testing
@@ -325,7 +312,6 @@ DEPENDENCIES
   social-share-button
   spring
   spring-commands-rspec
-  turbolinks
   uglifier
   web-console
 
