@@ -1,0 +1,5 @@
+header
+  h1 = @tag.name
+  .actions
+    = link_to 'BACK', :back
+  .total #{t('articles.header.count').upcase}: #{articles_count}

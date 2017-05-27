@@ -1,6 +1,6 @@
 - provide :title, t('.title')
 
-h1= t '.title'
+h1 = t '.title'
 
 .about-overview
   .image
@@ -10,8 +10,7 @@ h1= t '.title'
     p = t '.blog-overview', years: Time.current.year - 1999
 
 .about-features
-  ul
-    = render partial: 'pages/feature', collection: t('.features'), as: :feature
+  ul = render partial: 'pages/feature', collection: t('.features'), as: :feature
 
 .about-social
   h2 = t '.contact'

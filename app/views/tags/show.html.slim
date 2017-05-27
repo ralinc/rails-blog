@@ -1,10 +1,6 @@
 - provide :title, t('articles.index.title')
 
 .blog-articles
-  header
-    h1 = @tag.name
-    .actions
-      = link_to 'BACK', :back
-    .total #{t('articles.header.number_of_posts').upcase}: #{@tag.articles.published.size}
+  = render partial: 'tags_header', locals: {name: @tag.name, articles_count: @tag.published_articles.size}
   ul
-    = render @tag.articles.published.decorate
+    = render @tag.published_articles

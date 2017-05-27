@@ -1,9 +1,6 @@
 - provide :title, t('.title')
 
 .blog-articles
-  = render 'articles_header'
-  ul
-    = render @articles
-  .pagination
-    = link_to_prev_page @articles, '❮'
-    = link_to_next_page @articles, '❯'
+  = render partial: 'articles_header', locals: {count: @articles.total_count}
+  ul = render @articles
+  = render partial: 'articles_footer', locals: {articles: @articles}

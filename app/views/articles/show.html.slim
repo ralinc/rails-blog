@@ -1,17 +1,7 @@
 - provide :title, @article.title
 
 .blog-article
-  header
-    = link_to 'BACK', articles_path
-    - if user_signed_in?
-      = link_to 'EDIT', edit_article_path(@article)
-      = link_to 'DELETE', @article, method: :delete
-
-  article
-    h1 = @article.title
-    = render partial: 'tags'
-    = @article.html
-
-  footer = social_share_button_tag @article.title
-
-= render partial: 'comments'
+  = render partial: 'article_header', locals: {article: @article}
+  = render partial: 'article_content', locals: {title: @article.title, tags: @article.tags, content: @article.html}
+  = render partial: 'article_footer', locals: {title: @article.title}
+  = render partial: 'article_comments', locals: {slug: @article.slug, url: request.original_url}

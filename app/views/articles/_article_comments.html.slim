@@ -1,8 +1,8 @@
 #disqus_thread
 javascript:
   var disqus_config = function () {
-    this.page.url = "#{request.original_url}"
-    this.page.identifier = "#{@article.slug}"
+    this.page.url = "#{url}"
+    this.page.identifier = "#{slug}"
   };
 
   (function() {

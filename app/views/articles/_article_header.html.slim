@@ -1,0 +1,5 @@
+header
+  = link_to 'BACK', articles_path
+  - if user_signed_in?
+    = link_to 'EDIT', edit_article_path(article)
+    = link_to 'DELETE', article, method: :delete
