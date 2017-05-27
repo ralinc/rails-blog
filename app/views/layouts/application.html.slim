@@ -8,7 +8,7 @@ html
     title= page_title yield(:title)
     = favicon_link_tag 'favicon.png', type: 'image/png'
     = stylesheet_link_tag 'application', media: 'all'
-    = javascript_include_tag 'application'
+    = javascript_include_tag 'application', async: Rails.env.production?
     = csrf_meta_tags
   body
     - if current_page? root_path
