@@ -31,6 +31,7 @@ describe RegistrationsController do
 
   def register_new_user
     user = build :user
+
     post :create, params: {user: {email: user.email,
                                   password: user.password,
                                   password_confirmation: user.password}}
