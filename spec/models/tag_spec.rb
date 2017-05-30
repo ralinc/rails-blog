@@ -1,11 +1,9 @@
 require 'rails_helper'
 
 describe Tag do
-  it { should have_many(:taggings) }
-  it { should have_many(:articles).through(:taggings) }
+  let(:tag) { create :tag }
 
-  it 'returns only published articles' do
-    tag = create :tag
+  it 'returns published articles' do
     create :wip_article, tags: [tag]
     published_article = create :published_article, tags: [tag]
 
@@ -13,5 +11,12 @@ describe Tag do
 
     expect(published_articles.size).to eq(1)
     expect(published_articles.first.title).to eq(published_article.title)
+  end
+
+  context '(validations)' do
+    subject { tag }
+
+    it { should validate_presence_of(:name) }
+    it { should validate_uniqueness_of(:name).case_insensitive }
   end
 end

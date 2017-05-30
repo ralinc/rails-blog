@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170520104452) do
+ActiveRecord::Schema.define(version: 20170530120112) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
+    t.string "title", null: false
+    t.text "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "slug"
-    t.integer "status", default: 0
+    t.string "slug", null: false
+    t.integer "status", default: 0, null: false
     t.datetime "date", default: -> { "now()" }, null: false
     t.index ["created_at"], name: "index_articles_on_created_at"
-    t.index ["slug"], name: "index_articles_on_slug"
+    t.index ["slug"], name: "index_articles_on_slug", unique: true
   end
 
   create_table "taggings", force: :cascade do |t|
@@ -37,14 +37,14 @@ ActiveRecord::Schema.define(version: 20170520104452) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_tags_on_name"
+    t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "email"
+    t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "encrypted_password", null: false
@@ -53,4 +53,6 @@ ActiveRecord::Schema.define(version: 20170520104452) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "taggings", "articles"
+  add_foreign_key "taggings", "tags"
 end

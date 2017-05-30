@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe Article do
+  let(:article) { create :article }
+
   it 'order is by date descending' do
     create :article, title: 'first', created_at: 1.day.ago, date: 1.day.ago
     create :article, title: 'second', created_at: 2.days.ago, date: DateTime.current
@@ -9,8 +11,6 @@ describe Article do
   end
 
   it 'url is built based on slug' do
-    article = create :article
-
     expect(article.to_param).to eq article.slug
   end
 
@@ -29,7 +29,9 @@ describe Article do
     expect(article.tags_string).to eq 'abc, xyz'
   end
 
-  describe 'validations' do
+  describe '(validations)' do
+    subject { article }
+
     it { should validate_presence_of(:content) }
     it { should validate_presence_of(:date) }
     it { should validate_presence_of(:slug) }
