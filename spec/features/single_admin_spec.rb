@@ -15,7 +15,7 @@ feature 'Single admin user' do
     visit new_user_registration_path
     submit_registration_form user
 
-    expect(page).to have_current_path(root_path)
+    expect(page).to have_current_path(articles_path)
   end
 
   scenario 'second user is redirected to login page' do

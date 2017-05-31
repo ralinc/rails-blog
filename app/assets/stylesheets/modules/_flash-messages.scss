@@ -1,0 +1,19 @@
+.flash-messages {
+  $flashes: (
+    "alert": #fff6bf,
+    "error": #fbe3e4,
+    "notice": #e5edf8,
+    "success": #e6efc2,
+  ) !default;
+
+  @each $type, $color in $flashes {
+    .flash-#{$type} {
+      background-color: $color;
+      color: shade($color, 60%);
+      display: block;
+      margin-bottom: $large-spacing;
+      padding: $base-spacing / 2;
+      text-align: center;
+    }
+  }
+}

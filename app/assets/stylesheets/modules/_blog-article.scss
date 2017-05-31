@@ -85,20 +85,6 @@
     }
   }
 
-  .social-share-button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .ssb-icon {
-      $icon-size: 2.5rem;
-      background-size: $icon-size;
-      height: $icon-size;
-      margin: .375rem;
-      width: $icon-size;
-    }
-  }
-
   form {
     input,
     select,
@@ -124,5 +110,24 @@
     }
 
     .input { margin-top: $base-spacing; }
+  }
+
+  .social-share-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .ssb-icon {
+      $icon-size: 2.5rem;
+      background-size: $icon-size;
+      height: $icon-size;
+      margin: .375rem;
+      width: $icon-size;
+    }
+  }
+
+  .error {
+    color: $color-red;
+    font-size: 90%;
   }
 }
