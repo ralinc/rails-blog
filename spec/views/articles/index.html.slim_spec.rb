@@ -14,7 +14,7 @@ describe 'articles/index.html.slim' do
     render
 
     Article.all.each do |article|
-      expect(rendered).to have_content(article.date.strftime('%b %d, %Y %H:%M'))
+      expect(rendered).to have_content(article.date.strftime('%B %d, %Y %H:%M'))
     end
   end
 
