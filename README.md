@@ -1,23 +1,22 @@
 # Ruby on Rails Markdown Blog
-[![Build Status](https://travis-ci.org/ralinc/ralin.net.svg?branch=master)](https://travis-ci.org/ralinc/ralin.net)
-[![Test Coverage](https://codeclimate.com/github/ralinc/ralin.net/badges/coverage.svg)](https://codeclimate.com/github/ralinc/ralin.net/coverage)
-[![Code Climate](https://codeclimate.com/github/ralinc/ralin.net/badges/gpa.svg)](https://codeclimate.com/github/ralinc/ralin.net)
 
-This is the source code repository for my digital space [www.ralin.net](http://www.ralin.net/). The website contains some information about me, social links and my blog. It is built using open source software and tools like Ruby on Rails and PostgreSQL. Its source code is completely open and any part of it can be used for any purpose.
+[![Build Status](https://travis-ci.org/ralinc/rails-blog.svg?branch=master)](https://travis-ci.org/ralinc/rails-blog)
+[![Test Coverage](https://codeclimate.com/github/ralinc/rails-blog/badges/coverage.svg)](https://codeclimate.com/github/ralinc/rails-blog/coverage)
+[![Code Climate](https://codeclimate.com/github/ralinc/rails-blog/badges/gpa.svg)](https://codeclimate.com/github/ralinc/rails-blog)
 
-## How to use it?
+*Disclaimer*: The repo is no longer maintained as I migrated my blog to Middleman
+as it barely has any dynamic content and fails to justify its deployment costs.
+Also, having my blog posts under version control seems much more convenient than
+having them in a database. Still you can review the code and use any part of it
+for your own Rails blog.
 
-- copy and use any snippet you like
-- follow my approach to any problem you face
-- fork the repo and use it for your own personal blog
+---
 
-## How to help?
-
-- star the repository if you like it
-- follow me to get updates on its developments
-- review code and propose better approaches
-- create issues for bugs or features you may need
-- open pull requests
+This is the source code repository for my digital space
+[www.ralin.net](http://www.ralin.net/). The website contains some information
+about me, social links and my blog. It is built using open source software and
+tools like Ruby on Rails and PostgreSQL. Its source code is completely open and
+any part of it can be used for any purpose.
 
 ## Stack
 
